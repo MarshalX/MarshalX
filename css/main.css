@@ -1,5 +1,5 @@
 body {
-    font-family: 'Lato', serif;
+    /*font-family: 'Lato', serif;*/
 }
 
 h1,
@@ -181,7 +181,7 @@ header.masthead h1 {
 
 header.masthead h2 {
     font-size: 1.3rem;
-    font-family: 'Lato', serif;
+    /*font-family: 'Lato', serif;*/
 }
 
 @media (min-width: 992px) {
@@ -191,13 +191,29 @@ header.masthead h2 {
     }
 
     header.masthead h1 {
-        font-size: 4.75em;
+        font-size: 3.75em;
+        /*font-size: 4.75em;*/
         line-height: 4rem;
     }
 
     header.masthead h2 {
-        font-size: 1.75em;
+        font-size: 1.50em;
+        /*font-size: 1.75em;*/
     }
+}
+
+.lead-0 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.15;
+}
+
+.lead {
+    text-indent: 2em;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.15;
+    margin: 0 0 0.25rem;
 }
 
 .portfolio {
@@ -378,6 +394,10 @@ a:focus, a:hover, a:active {
     border-color: #d75100;
 }
 
+#fixed:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,90,0,0.9);
+}
+
 .btn-secondary {
     background-color: #000000;
     border-color: #000000;
@@ -391,3 +411,21 @@ a:focus, a:hover, a:active {
 .border-2 {
     border: 2px solid #dee2e6!important;
 }
+
+.fab {
+    display: contents;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.bg-primary li {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Montserrat', serif;
+    line-height: 1.15;
+}
+
