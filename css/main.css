@@ -359,6 +359,10 @@ a:focus, a:hover, a:active {
     color: #d75100;
 }
 
+a:not([href]) {
+    color: #ffffff;
+}
+
 .btn {
     border-width: 2px;
 }
