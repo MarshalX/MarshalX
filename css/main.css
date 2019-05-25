@@ -231,7 +231,7 @@ header.masthead h2 {
     -webkit-transition: all ease 0.5s;
     transition: all ease 0.5s;
     opacity: 0;
-    background-color: rgba(255,90,0,0.9);
+    background-color: rgba(255, 90, 0, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -384,22 +384,25 @@ a:not([href]) {
 }
 
 .btn-primary {
+    outline-color: #ff5a00;
     background-color: #ff5a00;
     border-color: #ff5a00;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:disabled,.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    outline-color: #ff5a00;
+    box-shadow: 0 0 0 0.2rem rgba(255, 90, 0, .5);
     background-color: #d75100;
     border-color: #d75100;
 }
 
-#fixed:active{
+#fixed:active {
     background-color: #d75100;
     border-color: #d75100;
 }
 
 #fixed:focus {
-    box-shadow: 0 0 0 0.2rem rgba(255,90,0,0.9);
+    box-shadow: 0 0 0 0.2rem rgba(255, 90, 0, 0.9);
 }
 
 .btn-secondary {
@@ -413,7 +416,7 @@ a:not([href]) {
 }
 
 .border-2 {
-    border: 2px solid #dee2e6!important;
+    border: 2px solid #dee2e6 !important;
 }
 
 .fab {
