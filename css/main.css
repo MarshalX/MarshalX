@@ -435,7 +435,7 @@ a:not([href]) {
 }
 
 .bg-primary li {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 300;
     font-family: 'Montserrat', serif;
     line-height: 1.15;
