@@ -355,8 +355,13 @@ a {
     color: #ff5a00;
 }
 
-a:focus, a:hover, a:active {
+a:focus {
+    text-decoration: none;
+}
+
+a:hover, a:active {
     color: #d75100;
+    text-decoration: none;
 }
 
 a:not([href]) {
