@@ -10,6 +10,5 @@
     ],
     "theme_color": "#ff5a00",
     "background_color": "#ff5a00",
-    "start_url": "https://marshal.by",
     "display": "standalone"
 }
