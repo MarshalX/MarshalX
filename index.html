@@ -153,6 +153,50 @@
         <hr class="star-dark mb-5">
         <div class="card-deck">
             <div class="card border-warning mb-4">
+                <div class="card-header border-warning"><b>Грамота</b></div>
+                <div class="card-body">
+                    <p class="card-text">Грамоты закончевшего 2 семестр 2017/2018 года с отметками "9", "10" и за
+                        достигнутые высокие результаты в 1 семетре 2018/2019 года соответственно</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary btn-block" tabindex="0" role="button" data-toggle="modal"
+                       data-target="#award-modal-7">Грамота</a>
+                </div>
+                <div class="card-footer border-warning">
+                    <small class="text-muted">Приказ от 6.09.2018 №105, 26.02.2019 №17</small>
+                </div>
+            </div>
+            <div class="card border-warning mb-4">
+                <div class="card-header border-warning"><b>Доска почёта</b></div>
+                <div class="card-body">
+                    <p class="card-text">За достигнутые успехи в учебе, активную жизнинную позицию занесён на доску
+                        почёта</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary btn-block" tabindex="0" role="button" data-toggle="modal"
+                       data-target="#award-modal-8">Фотография</a>
+                </div>
+                <div class="card-footer border-warning">
+                    <small class="text-muted">Приказ от 11 декабря 2018, №41-у</small>
+                </div>
+            </div>
+            <div class="card border-warning mb-4">
+                <div class="card-header border-warning"><b>Благодарственное письмо</b></div>
+                <div class="card-body">
+                    <p class="card-text">За достигнутые высокие результаты в учебе, активное участие в общественной
+                        жизни колледжа и др.</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn btn-primary btn-block" tabindex="0" role="button" data-toggle="modal"
+                       data-target="#award-modal-9">Письмо</a>
+                </div>
+                <div class="card-footer border-warning">
+                    <small class="text-muted">Приказ от 13 декабря 2018, №43-у</small>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card border-warning mb-4">
                 <div class="card-header border-warning"><b>WorldSkills</b></div>
                 <div class="card-body">
                     <h5 class="card-title">Мой результат:</h5>
@@ -552,11 +596,13 @@
         <hr class="star-dark mb-5">
         <div class="row">
             <div class="col-lg-8 mx-auto">
-                <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://formspree.io/Ilya@marshal.by" method="POST">
+                <form name="sentMessage" id="contactForm" novalidate="novalidate"
+                      action="https://formspree.io/Ilya@marshal.by" method="POST">
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Имя</label>
-                            <input class="form-control" id="name" name="name" type="text" placeholder="Имя" required="required"
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Имя"
+                                   required="required"
                                    data-validation-required-message="Пожалуйста введите ваше имя.">
                             <p class="help-block text-danger"></p>
                         </div>
@@ -573,7 +619,8 @@
                     <div class="control-group">
                         <div class="form-group floating-label-form-group controls mb-0 pb-2">
                             <label>Контактный номер</label>
-                            <input class="form-control" id="phone" name="phone" type="tel" placeholder="Контактный номер"
+                            <input class="form-control" id="phone" name="phone" type="tel"
+                                   placeholder="Контактный номер"
                                    required="required"
                                    data-validation-required-message="Пожалуйста введите контактный номер.">
                             <p class="help-block text-danger"></p>
@@ -591,7 +638,9 @@
                     <br>
                     <div id="success"></div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-xl btn-block" id="sendMessageButton">Отправить</button>
+                        <button type="submit" class="btn btn-primary btn-xl btn-block" id="sendMessageButton">
+                            Отправить
+                        </button>
                     </div>
                 </form>
             </div>
@@ -780,6 +829,69 @@
             </div>
             <div class="modal-body">
                 <img class="img-fluid" src="img/awards/camp.jpg" alt="Участник 1 профильного лагеря">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Award Modal 7 -->
+<div class="modal fade" id="award-modal-7" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Грамоты</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid mb-2" src="img/awards/ngaek.jpg"
+                     alt="Грамота закончевшего 2 семестр 2017/2018 года с отметками 9, 10">
+                <img class="img-fluid" src="img/awards/ngaek-2.jpg"
+                     alt="Грамота за достигнутые высокие результаты в 1 семетре 2018/2019 года">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Award Modal 8 -->
+<div class="modal fade" id="award-modal-8" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Доска почёта</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="img/awards/board.jpg" alt="Я на доске почёта">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Award Modal 9 -->
+<div class="modal fade" id="award-modal-9" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Благодарственное письмо</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="img/awards/mail.jpg" alt="Благодарственное письмо">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Закрыть</button>
