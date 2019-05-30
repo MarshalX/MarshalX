@@ -50,10 +50,10 @@
 					<p><b>Мой результат:</b> четвёртое место по компетенции "Программные решения для бизнеса".</p>
 					<p><b>Информация о конкурсе:</b> ассоциация, целью которой является повышение статуса и стандартов профессиональной подготовки и квалификации по всему миру через проведение международных соревнований.</p>
 
-					<figure>
-						<img src="https://marshal.by/img/awards/worldskills.jpg">
-						<figcaption>Диплом участника WorldSkills Belarus 2018</figcaption>
-					</figure>
+					<!--<figure>-->
+						<!--<img src="https://marshal.by/img/awards/worldskills.jpg">-->
+						<!--<figcaption>Диплом участника WorldSkills Belarus 2018</figcaption>-->
+					<!--</figure>-->
 
 					<h3>IT-Планета</h3>
 					<p><b>Мой результат:</b> занял 4 место по Республике Беларусь, участовал в первом отборочном этапе, показал результат в 200 баллов из 210 возможных, финал состоится осенью.</p>
@@ -146,9 +146,9 @@
 					<figure>
 						<img src="https://marshal.by/img/projects/bubble.jpeg">
 					</figure>
-					<figure>
-						<img src="https://marshal.by/img/projects/bubble-cart.jpeg">
-					</figure>
+					<!--<figure>-->
+						<!--<img src="https://marshal.by/img/projects/bubble-cart.jpeg">-->
+					<!--</figure>-->
 					<figure>
 						<video>
 							<source
