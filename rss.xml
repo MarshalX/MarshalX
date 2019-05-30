@@ -120,8 +120,8 @@
 					</ul>
 
 					<button formaction="https://t.me/MarshalX"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Связаться со мной
 					</button>
@@ -133,8 +133,8 @@
 					<a href="https://t.me/codePaste_bot">Telegram бот</a>
 					<a href="https://github.com/DarkKeks/Codepaste">Исходный код</a>
 					<button formaction="https://codepaste.ml/"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Перейти
 					</button>
@@ -160,8 +160,8 @@
 					<h3>StudTest</h3>
 					<p>Простой сервис для создания тестов без регистрации. Вопросы и ответы, ничего лишнего. Возможность включения случайного порядка вопросов, установки ограничения на прохождение по времени, просмотр результатов участников тестирования со стороны владельца теста.</p>
 					<button formaction="https://studtest.ml/"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Перейти
 					</button>
@@ -170,8 +170,8 @@
 					<p>Игровой бот "Орёл-Решка", разработанный для сервиса VKCoin соцсети "ВКонтакте". Пополнение, вывод, просмотр баланса, статистика, рейтинги и, естественно, сам игровой процесс. За время существования сыграно более 1.330.000 игр, 138 тысяч уникальных пользователей.</p>
 					<a href="https://github.com/MarshalX/VCoinGame/">Исходный код</a>
 					<button formaction="https://vk.com/vcoingame"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Перейти
 					</button>
@@ -180,8 +180,8 @@
 					<p>Реализация шифров Цезаря и Виженера используя математические модели, графический интерфейс. Классы, доступные для использования в других проектах.</p>
 					<a href="https://github.com/MarshalX/CaesarAndVigenereCipher/">Исходный код</a>
 					<button formaction="https://www.youtube.com/watch?v=dcJY8R2WnLQ"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Видеодемонстрация
 					</button>
@@ -193,8 +193,8 @@
 					<h3>Мониторинг игровых серверов</h3>
 					<p>Отслеживание статуса большого количества онлайн-серверов многопользовательской игры с использованием периодических задач (Celery). Сбор информации об онлайне, максимальном количество игроков, описании и версии.</p>
 					<button formaction="https://minecraft.page/"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Перейти
 					</button>
@@ -202,8 +202,8 @@
 					<h3>VKtoTGparser</h3>
 					<p>Дублирование контента в автоматическом режиме из любого сообщества ВКонтакте в Telegram канал. Поддерживаются следующие типы информации: текст, фото, видео, аудио, GIF-изображения, коллаж (альбом).</p>
 					<button formaction="https://t.me/one_poetry"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Пример ведения канала
 					</button>
@@ -211,8 +211,8 @@
 					<h3>Капибара-банкир</h3>
 					<p>Подсчёт ресурсов и учёт складов по актуальным ценам биржи в Telegram-фентези, RPG в чате, карманной стратегии. Позволяет управлять складами нескольких, связанных между собой, аккаунтов, производить поиск необходимых ресурсов. Насчитывает 7 тысяч уникальных пользователей.</p>
 					<button formaction="https://t.me/ChatWarsStock_bot"
-						data-background-color="#ff5a00"
-						data-color="white"
+						data-background-color="#f8f9fa"
+						data-color="#212529"
 						data-turbo="false"
 						data-primary="true">Перейти
 					</button>
