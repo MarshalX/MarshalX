@@ -441,3 +441,6 @@ a:not([href]) {
     line-height: 1.15;
 }
 
+.card {
+    min-width: 290px;
+}
