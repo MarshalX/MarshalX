@@ -177,34 +177,34 @@ const main = css`
     }
   }
 
-  header.masthead {
+  section.masthead {
     padding-top: calc(6rem + 72px);
     padding-bottom: 6rem;
   }
 
-  header.masthead h1 {
+  section.masthead h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
 
-  header.masthead h2 {
+  section.masthead h2 {
     font-size: 1.3rem;
     /*font-family: 'Lato', serif;*/
   }
 
   @media (min-width: 992px) {
-    header.masthead {
+    section.masthead {
       padding-top: calc(6rem + 106px);
       padding-bottom: 6rem;
     }
 
-    header.masthead h1 {
+    section.masthead h1 {
       font-size: 3.75em;
       /*font-size: 4.75em;*/
       line-height: 4rem;
     }
 
-    header.masthead h2 {
+    section.masthead h2 {
       font-size: 1.5em;
       /*font-size: 1.75em;*/
     }
