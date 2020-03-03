@@ -1,11 +1,11 @@
 import React from "react"
-import {graphql} from "gatsby"
-import {Layout, Listing, SliceZone} from "../components"
+import { graphql } from "gatsby"
+import { Layout, Listing, SliceZone } from "../components"
 import Categories from "../components/Listing/Categories"
-import {Container} from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
-const Post = ({data: {prismicPost, posts}}) => {
-  const {data} = prismicPost
+const Post = ({ data: { prismicPost, posts } }) => {
+  const { data } = prismicPost
   let categories = false
   if (data.categories[0].category) {
     categories = data.categories.map(c => c.category.document[0].data.name)
@@ -15,17 +15,18 @@ const Post = ({data: {prismicPost, posts}}) => {
       <Container>
         <div>
           <div>
-            <hr/>
+            <hr />
             <p>
-              {data.date} — {categories && <Categories categories={categories}/>}
+              {data.date} —{" "}
+              {categories && <Categories categories={categories} />}
             </p>
             <h1>{data.title.text}</h1>
           </div>
         </div>
         <div>
-          <SliceZone allSlices={data.body}/>
-          <h2 style={{marginTop: "4rem"}}>Recent posts</h2>
-          <Listing posts={posts.nodes}/>
+          <SliceZone allSlices={data.body} />
+          <h2 style={{ marginTop: "4rem" }}>Recent posts</h2>
+          <Listing posts={posts.nodes} />
         </div>
       </Container>
     </Layout>

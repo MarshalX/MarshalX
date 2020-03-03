@@ -1,14 +1,14 @@
 import React from "react"
-import {graphql} from "gatsby"
-import {Layout, Listing} from "../components"
-import {Container} from "react-bootstrap"
+import { graphql } from "gatsby"
+import { Layout, Listing } from "../components"
+import { Container } from "react-bootstrap"
 
 const Category = ({
-                    pageContext: {category},
-                    data: {
-                      posts: {nodes, totalCount},
-                    },
-                  }) => (
+  pageContext: { category },
+  data: {
+    posts: { nodes, totalCount },
+  },
+}) => (
   <Layout>
     <Container>
       <div>
@@ -16,11 +16,11 @@ const Category = ({
         <h1>{category}</h1>
       </div>
       <div>
-        <h2 style={{marginTop: "4rem"}}>
+        <h2 style={{ marginTop: "4rem" }}>
           {totalCount} {totalCount === 1 ? "Post" : "Posts"}{" "}
           {totalCount === 1 ? "was" : "were"} tagged with "{category}"
         </h2>
-        <Listing posts={nodes}/>
+        <Listing posts={nodes} />
       </div>
     </Container>
   </Layout>

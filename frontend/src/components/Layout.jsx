@@ -1,26 +1,19 @@
 import React, { Component } from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import { Global } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
 
-import { theme, main } from "../styles"
-import Navbar from "./Navbar"
+import { main, theme } from "../styles"
+import { Footer, Navbar, ScrollToTopButton } from "../components"
 
 const PureLayout = ({ children, data }) => (
   <ThemeProvider theme={theme}>
-    <>
-      <Global styles={main} />
-      {/*TODO SEO*/}
-      <Navbar />
-      {children}
-      <div>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: data.prismicHomepage.data.footer.html,
-          }}
-        />
-      </div>
-    </>
+    <Global styles={main} />
+    {/*TODO SEO*/}
+    <Navbar />
+    {children}
+    <Footer />
+    <ScrollToTopButton />
   </ThemeProvider>
 )
 
