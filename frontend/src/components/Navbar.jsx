@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import { Container, Nav, Navbar as BNavBar } from "react-bootstrap"
+import { Link } from "gatsby"
 
 const NavLink = props => {
   return (
@@ -36,11 +37,29 @@ export default class Navbar extends Component {
             </BNavBar.Toggle>
             <BNavBar.Collapse id="basic-navbar-nav">
               <ul className="navbar-nav ml-auto">
-                <NavLink href="about" name="Обо мне" />
-                <NavLink href="awards" name="Награды" />
-                <NavLink href="skills" name="Навыки" />
-                <NavLink href="projects" name="Проекты" />
-                <NavLink href="contacts" name="Контакты" />
+                {this.props.main ? (
+                  <>
+                    <NavLink href="about" name="Обо мне" />
+                    <Link to="/posts">
+                      <NavLink href="blog" name="Блог" />
+                    </Link>
+                    <NavLink href="skills" name="Навыки" />
+                    <NavLink href="projects" name="Проекты" />
+                    <NavLink href="contacts" name="Контакты" />
+                  </>
+                ) : (
+                  <>
+                    <Link to="/">
+                      <NavLink href="home" name="Главная" />
+                    </Link>
+                    <Link to="/posts">
+                      <NavLink href="blog" name="Блог" />
+                    </Link>
+                    <Link to="/categories">
+                      <NavLink href="categories" name="Категории" />
+                    </Link>
+                  </>
+                )}
               </ul>
             </BNavBar.Collapse>
           </Container>

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Layout, Listing, SliceZone } from "../components"
 import Categories from "../components/Listing/Categories"
-import { Container } from "react-bootstrap"
+import Section from "../components/Section"
 
 const Post = ({ data: { prismicPost, posts } }) => {
   const { data } = prismicPost
@@ -10,25 +10,27 @@ const Post = ({ data: { prismicPost, posts } }) => {
   if (data.categories[0].category) {
     categories = data.categories.map(c => c.category.document[0].data.name)
   }
+
+  const header = (
+    <>
+      {data.date} — {categories && <Categories categories={categories} />}
+    </>
+  )
+
   return (
     <Layout>
-      <Container>
-        <div>
-          <div>
-            <hr />
-            <p>
-              {data.date} —{" "}
-              {categories && <Categories categories={categories} />}
-            </p>
-            <h1>{data.title.text}</h1>
-          </div>
-        </div>
-        <div>
-          <SliceZone allSlices={data.body} />
-          <h2 style={{ marginTop: "4rem" }}>Recent posts</h2>
-          <Listing posts={posts.nodes} />
-        </div>
-      </Container>
+      <Section
+        dark={true}
+        id="post_header"
+        name={data.title.text}
+        custom_class="masthead"
+      />
+      <Section id="post" name={header}>
+        <SliceZone allSlices={data.body} />
+      </Section>
+      <Section dark={true} id="recent_posts" name="Недавние посты">
+        <Listing posts={posts.nodes} />
+      </Section>
     </Layout>
   )
 }

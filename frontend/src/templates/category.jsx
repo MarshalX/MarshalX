@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Layout, Listing } from "../components"
-import { Container } from "react-bootstrap"
+import Section from "../components/Section"
 
 const Category = ({
   pageContext: { category },
@@ -10,19 +10,15 @@ const Category = ({
   },
 }) => (
   <Layout>
-    <Container>
-      <div>
-        <p>Category</p>
-        <h1>{category}</h1>
-      </div>
-      <div>
-        <h2 style={{ marginTop: "4rem" }}>
-          {totalCount} {totalCount === 1 ? "Post" : "Posts"}{" "}
-          {totalCount === 1 ? "was" : "were"} tagged with "{category}"
-        </h2>
-        <Listing posts={nodes} />
-      </div>
-    </Container>
+    <Section
+      dark={true}
+      id="category"
+      name={`Категория: ${category}`}
+      custom_class="masthead"
+    />
+    <Section id="category_count" name={`Постов в категории: ${totalCount}`}>
+      <Listing posts={nodes} />
+    </Section>
   </Layout>
 )
 

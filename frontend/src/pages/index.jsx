@@ -4,11 +4,12 @@ import { Col, Row } from "react-bootstrap"
 import Section from "../components/Section"
 import ContactForm from "../components/ContactForm"
 import { graphql } from "gatsby"
+import ContactLinks from "../components/Listing/ContactLinks"
 
 class Index extends Component {
   render() {
     const {
-      data: { homepage, posts },
+      data: { homepage, posts, contact_links },
     } = this.props
 
     const before_name = (
@@ -20,7 +21,7 @@ class Index extends Component {
     )
 
     return (
-      <Layout>
+      <Layout mainNavBar={true}>
         <Section
           dark={true}
           id="about"
@@ -73,17 +74,7 @@ class Index extends Component {
           <p>Josko</p>
         </Section>
         <Section dark={true} id="contacts" name="Контакты">
-          {/*TODO move to links list and getting data from graphql*/}
-          <ul className="list-inline mb-0 text-center">
-            <li className="list-inline-item">
-              <a
-                className="btn btn-fixed btn-outline-light text-center rounded-circle"
-                href="https://t.me/MarshalX"
-              >
-                <i className="fab fa-telegram"></i>
-              </a>
-            </li>
-          </ul>
+          <ContactLinks links={contact_links.nodes} />
         </Section>
         <Section id="contact-me" name="Связаться со мной">
           <div className="row">
@@ -127,6 +118,29 @@ export const pageQuery = graphql`
               document {
                 data {
                   name
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    contact_links: allPrismicContactLink {
+      nodes {
+        id
+        data {
+          body {
+            ... on PrismicContactLinkBodyUrl {
+              primary {
+                link {
+                  text
+                }
+              }
+            }
+            ... on PrismicContactLinkBodyFavicon {
+              primary {
+                icon {
+                  text
                 }
               }
             }

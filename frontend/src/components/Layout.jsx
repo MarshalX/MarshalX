@@ -6,16 +6,20 @@ import { ThemeProvider } from "emotion-theming"
 import { main, theme } from "../styles"
 import { Footer, Navbar, ScrollToTopButton } from "../components"
 
-const PureLayout = ({ children, data }) => (
-  <ThemeProvider theme={theme}>
-    <Global styles={main} />
-    {/*TODO SEO*/}
-    <Navbar />
-    {children}
-    <Footer />
-    <ScrollToTopButton />
-  </ThemeProvider>
-)
+class PureLayout extends Component {
+  render() {
+    return (
+      <ThemeProvider theme={theme}>
+        <Global styles={main} />
+        {/*TODO SEO*/}
+        <Navbar main={this.props.mainNavBar} />
+        {this.props.children}
+        <Footer />
+        <ScrollToTopButton />
+      </ThemeProvider>
+    )
+  }
+}
 
 class Layout extends Component {
   render() {

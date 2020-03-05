@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Container } from "react-bootstrap"
 
 export default class Section extends Component {
   render() {
@@ -10,12 +11,12 @@ export default class Section extends Component {
 
     return (
       <section className={`${bg} ${text} mb-0 ${custom_class}`} id={id}>
-        <div className="container">
+        <Container>
           {before_name}
           <h1 className={`${text} text-center text-uppercase mb-0`}>{name}</h1>
           <hr className={`${star} mb-5`} />
           {this.props.children}
-        </div>
+        </Container>
       </section>
     )
   }

@@ -1,0 +1,50 @@
+{
+  "Main": {
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "favicon": [],
+          "url": []
+        },
+        "choices": {
+          "favicon": {
+            "type": "Slice",
+            "fieldset": "Favicon",
+            "description": "Icon of link",
+            "icon": "face",
+            "display": "list",
+            "non-repeat": {
+              "icon": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "icon"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "url": {
+            "type": "Slice",
+            "fieldset": "Link",
+            "description": "URL of URI",
+            "icon": "insert_link",
+            "display": "list",
+            "non-repeat": {
+              "link": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "link"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}
