@@ -39,7 +39,7 @@ export default class Navbar extends Component {
               Меню <FontAwesomeIcon icon={["fas", "bars"]} />
             </BNavBar.Toggle>
             <BNavBar.Collapse id="basic-navbar-nav">
-              <BNavBar.Nav className="ml-auto">
+              <Nav className="ml-auto">
                 {this.props.main ? (
                   <>
                     <NavLink href="about" name="Обо мне" />
@@ -63,7 +63,7 @@ export default class Navbar extends Component {
                     </Link>
                   </>
                 )}
-              </BNavBar.Nav>
+              </Nav>
             </BNavBar.Collapse>
           </Container>
         </BNavBar>

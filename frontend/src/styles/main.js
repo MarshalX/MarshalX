@@ -85,7 +85,7 @@ const main = css`
     width: 3.25rem;
     height: 3.25rem;
     font-size: 1.25rem;
-    line-height: 2.65rem;
+    line-height: 2.35rem;
   }
 
   .scroll-to-top {

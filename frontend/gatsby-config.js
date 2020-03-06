@@ -15,6 +15,15 @@ module.exports = {
     "gatsby-plugin-emotion",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Montserrat"],
+          urls: ["/fonts/Montserrat.css"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-prismic`,
       options: {
         repositoryName: `marshal`,
