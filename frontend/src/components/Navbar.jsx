@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { Container, Nav, Navbar as BNavBar } from "react-bootstrap"
 import { Link } from "gatsby"
+import "../utils/fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavLink = props => {
   return (
@@ -19,6 +21,7 @@ export default class Navbar extends Component {
   render() {
     return (
       <>
+        <FontAwesomeIcon icon={["fas", "star"]} />
         <BNavBar
           bg="secondary"
           expand="lg"
@@ -33,10 +36,10 @@ export default class Navbar extends Component {
               aria-controls="basic-navbar-nav"
               className="btn-primary navbar-toggler-right text-uppercase text-white rounded"
             >
-              Меню TODO icon
+              Меню <FontAwesomeIcon icon={["fas", "bars"]} />
             </BNavBar.Toggle>
             <BNavBar.Collapse id="basic-navbar-nav">
-              <ul className="navbar-nav ml-auto">
+              <BNavBar.Nav className="ml-auto">
                 {this.props.main ? (
                   <>
                     <NavLink href="about" name="Обо мне" />
@@ -60,7 +63,7 @@ export default class Navbar extends Component {
                     </Link>
                   </>
                 )}
-              </ul>
+              </BNavBar.Nav>
             </BNavBar.Collapse>
           </Container>
         </BNavBar>

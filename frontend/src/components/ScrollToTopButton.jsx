@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import "../utils/fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default class ScrollToTopButton extends Component {
   render() {
@@ -8,7 +10,7 @@ export default class ScrollToTopButton extends Component {
           className="js-scroll-trigger d-block text-center text-white rounded"
           href="#page-top"
         >
-          <i>TODO icon to top</i>
+          <FontAwesomeIcon icon={["fa", "chevron-up"]} />
         </a>
       </div>
     )

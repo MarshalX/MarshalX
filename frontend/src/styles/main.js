@@ -31,12 +31,13 @@ const main = css`
   hr.star-dark:after {
     position: relative;
     top: -0.8em;
-    display: inline-block;
     padding: 0 0.25em;
-    content: "\\f005";
-    font-family: "Font Awesome 5 Free", serif;
+    content: " ";
+    font-family: serif;
     font-weight: 900;
     font-size: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   hr.star-light {
@@ -46,6 +47,7 @@ const main = css`
   hr.star-light:after {
     color: #fff;
     background-color: #ff5a00;
+    background-image: url("/star_light.svg");
   }
 
   hr.star-dark {
@@ -55,6 +57,7 @@ const main = css`
   hr.star-dark:after {
     color: #000000;
     background-color: white;
+    background-image: url("/star_dark.svg");
   }
 
   section {
@@ -82,7 +85,7 @@ const main = css`
     width: 3.25rem;
     height: 3.25rem;
     font-size: 1.25rem;
-    line-height: 2.35rem;
+    line-height: 2.65rem;
   }
 
   .scroll-to-top {

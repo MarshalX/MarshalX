@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import ContactLink from "../../slices/ContactLink"
-
-// TODO fix icons
+import { ListGroup } from "react-bootstrap"
 
 export default class ContactLinks extends Component {
   render() {
@@ -11,13 +10,13 @@ export default class ContactLinks extends Component {
         {links.map((
           link // node
         ) => (
-          <ul className="list-inline mb-0 text-center">
+          <ListGroup className="mb-0 text-center">
             {link.data.body.map(contact_link => (
-              <li className="list-inline-item">
+              <ListGroup.Item>
                 <ContactLink key={contact_link.id} input={contact_link} />
-              </li>
+              </ListGroup.Item>
             ))}
-          </ul>
+          </ListGroup>
         ))}
       </>
     )
