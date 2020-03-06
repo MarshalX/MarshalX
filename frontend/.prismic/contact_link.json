@@ -5,15 +5,14 @@
       "fieldset": "Slice zone",
       "config": {
         "labels": {
-          "favicon": [],
-          "url": []
+          "contact_link": []
         },
         "choices": {
-          "favicon": {
+          "contact_link": {
             "type": "Slice",
-            "fieldset": "Favicon",
-            "description": "Icon of link",
-            "icon": "face",
+            "fieldset": "Contact link",
+            "description": "Icon with link",
+            "icon": "insert_link",
             "display": "list",
             "non-repeat": {
               "icon": {
@@ -22,21 +21,10 @@
                   "single": "paragraph",
                   "label": "icon"
                 }
-              }
-            },
-            "repeat": {}
-          },
-          "url": {
-            "type": "Slice",
-            "fieldset": "Link",
-            "description": "URL of URI",
-            "icon": "insert_link",
-            "display": "list",
-            "non-repeat": {
+              },
               "link": {
-                "type": "StructuredText",
+                "type": "Link",
                 "config": {
-                  "single": "paragraph",
                   "label": "link"
                 }
               }

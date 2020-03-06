@@ -125,25 +125,20 @@ export const pageQuery = graphql`
         }
       }
     }
-    contact_links: allPrismicContactLink {
+    contact_links: allPrismicContactLinks {
       nodes {
-        id
         data {
           body {
-            ... on PrismicContactLinkBodyUrl {
-              primary {
-                link {
-                  text
-                }
+            id
+            primary {
+              icon {
+                text
+              }
+              link {
+                url
               }
             }
-            ... on PrismicContactLinkBodyFavicon {
-              primary {
-                icon {
-                  text
-                }
-              }
-            }
+            slice_type
           }
         }
       }

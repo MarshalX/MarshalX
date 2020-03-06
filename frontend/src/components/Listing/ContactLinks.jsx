@@ -1,23 +1,25 @@
 import React, { Component } from "react"
+import ContactLink from "../../slices/ContactLink"
 
-// TODO rewrite on normal slice zone and slice items components, fix icons
+// TODO fix icons
 
 export default class ContactLinks extends Component {
   render() {
     const { links } = this.props
     return (
-      <ul className="list-inline mb-0 text-center">
-        {links.map(link => (
-          <li className="list-inline-item" key={link.id}>
-            <a
-              className="btn btn-fixed btn-outline-light text-center rounded-circle"
-              href={link.data.body[1].primary.link.text}
-            >
-              <i className={link.data.body[0].primary.icon.text} />
-            </a>
-          </li>
+      <>
+        {links.map((
+          link // node
+        ) => (
+          <ul className="list-inline mb-0 text-center">
+            {link.data.body.map(contact_link => (
+              <li className="list-inline-item">
+                <ContactLink key={contact_link.id} input={contact_link} />
+              </li>
+            ))}
+          </ul>
         ))}
-      </ul>
+      </>
     )
   }
 }
