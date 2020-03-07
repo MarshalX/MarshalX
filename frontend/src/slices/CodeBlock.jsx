@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 
 const Content = styled.div`
   padding-bottom: 2rem;
-  max-width: ${props => props.theme.maxWidthText};
 `
 
 const CodeBlock = ({ input }) => (

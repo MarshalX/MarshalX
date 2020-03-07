@@ -2,27 +2,28 @@ import React, { Component } from "react"
 import styled from "@emotion/styled"
 import { Link } from "gatsby"
 import Categories from "./Categories"
+import { ListGroup } from "react-bootstrap"
 
 const StyledLink = styled(Link)`
   font-size: 2.369rem;
-  color: ${props => props.theme.colors.black};
   font-style: normal;
-  @media (max-width: ${props => props.theme.breakpoints.s}) {
-    font-size: 1.777rem;
-  }
+`
+
+const StyledP = styled.p`
+  color: black;
 `
 
 export default class ListItem extends Component {
   render() {
     const { node, categories } = this.props
     return (
-      <li>
-        <p>
+      <ListGroup.Item>
+        <StyledP>
           {node.data.date} —{" "}
           {categories && <Categories categories={categories} />}
-        </p>
+        </StyledP>
         <StyledLink to={node.uid}>{node.data.title.text}</StyledLink>
-      </li>
+      </ListGroup.Item>
     )
   }
 }

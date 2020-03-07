@@ -1,11 +1,12 @@
 import React, { Component } from "react"
 import ListItem from "./ListItem"
+import { ListGroup } from "react-bootstrap"
 
 export default class Listing extends Component {
   render() {
     const { posts } = this.props
     return (
-      <ul>
+      <ListGroup>
         {posts.map(post => {
           let categories = false
           if (post.data.categories[0].category) {
@@ -15,7 +16,7 @@ export default class Listing extends Component {
           }
           return <ListItem key={post.uid} node={post} categories={categories} />
         })}
-      </ul>
+      </ListGroup>
     )
   }
 }
