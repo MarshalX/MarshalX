@@ -14,7 +14,7 @@ class PureLayout extends Component {
         {/*TODO SEO*/}
         <Navbar main={this.props.mainNavBar} />
         {this.props.children}
-        <Footer />
+        <Footer data={this.props.data} />
         <ScrollToTopButton />
       </ThemeProvider>
     )
@@ -27,10 +27,17 @@ class Layout extends Component {
       <StaticQuery
         query={graphql`
           query LayoutQuery {
-            prismicHomepage {
+            footer: prismicFooter {
               data {
-                footer {
-                  html
+                body {
+                  primary {
+                    title {
+                      text
+                    }
+                    content {
+                      html
+                    }
+                  }
                 }
               }
             }

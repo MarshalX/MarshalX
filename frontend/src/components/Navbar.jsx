@@ -25,7 +25,7 @@ export default class Navbar extends Component {
         <BNavBar
           bg="secondary"
           expand="lg"
-          className="fixed-top text-uppercase"
+          className="fixed-top text-uppercase navbar-shrink"
           id="mainNav"
         >
           <Container>

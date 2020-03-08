@@ -213,12 +213,6 @@ const main = css`
     }
   }
 
-  .lead-0 {
-    font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1.15;
-  }
-
   .lead {
     text-indent: 2em;
     font-size: 1.25rem;

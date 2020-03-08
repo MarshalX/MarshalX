@@ -5,19 +5,13 @@ export default class ContactLinks extends Component {
   render() {
     const { links } = this.props
     return (
-      <>
-        {links.map((
-          link // node
-        ) => (
-          <ul className="list-inline mb-0 text-center">
-            {link.data.body.map(contact_link => (
-              <li className="list-inline-item">
-                <ContactLink key={contact_link.id} input={contact_link} />
-              </li>
-            ))}
-          </ul>
+      <ul className="list-inline mb-0 text-center">
+        {links.map(link => (
+          <li className="list-inline-item">
+            <ContactLink key={link.id} input={link} />
+          </li>
         ))}
-      </>
+      </ul>
     )
   }
 }

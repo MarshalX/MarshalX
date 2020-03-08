@@ -74,7 +74,7 @@ class Index extends Component {
           <p>Josko</p>
         </Section>
         <Section dark={true} id="contacts" name="Контакты">
-          <ContactLinks links={contact_links.nodes} />
+          <ContactLinks links={contact_links.data.body} />
         </Section>
         <Section id="contact-me" name="Связаться со мной">
           <div className="row">
@@ -128,20 +128,17 @@ export const pageQuery = graphql`
         }
       }
     }
-    contact_links: allPrismicContactLinks {
-      nodes {
-        data {
-          body {
-            id
-            primary {
-              icon {
-                text
-              }
-              link {
-                url
-              }
+    contact_links: prismicContactLinks {
+      data {
+        body {
+          id
+          primary {
+            icon {
+              text
             }
-            slice_type
+            link {
+              url
+            }
           }
         }
       }
