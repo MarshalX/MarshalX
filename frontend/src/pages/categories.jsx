@@ -31,13 +31,8 @@ export default class Categories extends Component {
 
     return (
       <Layout>
-        <Section
-          dark={true}
-          id="header"
-          name="Категории блога"
-          custom_class="masthead"
-        />
-        <Section id="categories" name="Все категории">
+        <Section dark={true} id="header" name="Категории" masthead={true} />
+        <Section id="categories" compact={true}>
           <ListGroup>
             {categoryList.map(cat => (
               <ListGroup.Item>

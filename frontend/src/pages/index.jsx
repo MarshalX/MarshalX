@@ -27,7 +27,7 @@ class Index extends Component {
           id="about"
           name={homepage.data.title.text}
           before_name={before_name}
-          custom_class="masthead"
+          masthead={true}
         >
           <Row>
             <Col lg="4" className="ml-auto">

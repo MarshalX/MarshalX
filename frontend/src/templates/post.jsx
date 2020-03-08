@@ -23,7 +23,7 @@ const Post = ({ data: { prismicPost, posts } }) => {
         dark={true}
         id="post_header"
         name={data.title.text}
-        custom_class="masthead"
+        masthead={true}
       />
       <Section id="post" name={header}>
         <SliceZone allSlices={data.body} />

@@ -60,22 +60,6 @@ const main = css`
     background-image: url("/star_dark.svg");
   }
 
-  section {
-    padding: 6rem 0;
-  }
-
-  section h2 {
-    font-size: 2.25rem;
-    line-height: 2rem;
-  }
-
-  @media (min-width: 992px) {
-    section h2 {
-      font-size: 3rem;
-      line-height: 2.5rem;
-    }
-  }
-
   .btn-xl {
     padding: 1rem 1.75rem;
     font-size: 1.25rem;
@@ -177,39 +161,6 @@ const main = css`
 
     #mainNav.navbar-shrink .navbar-brand {
       font-size: 1.5em;
-    }
-  }
-
-  section.masthead {
-    padding-top: calc(6rem + 72px);
-    padding-bottom: 6rem;
-  }
-
-  section.masthead h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  section.masthead h2 {
-    font-size: 1.3rem;
-    /*font-family: 'Lato', serif;*/
-  }
-
-  @media (min-width: 992px) {
-    section.masthead {
-      padding-top: calc(6rem + 106px);
-      padding-bottom: 6rem;
-    }
-
-    section.masthead h1 {
-      font-size: 3.75em;
-      /*font-size: 4.75em;*/
-      line-height: 4rem;
-    }
-
-    section.masthead h2 {
-      font-size: 1.5em;
-      /*font-size: 1.75em;*/
     }
   }
 

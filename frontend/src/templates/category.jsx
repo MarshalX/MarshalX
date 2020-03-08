@@ -14,7 +14,7 @@ const Category = ({
       dark={true}
       id="category"
       name={`Категория: ${category}`}
-      custom_class="masthead"
+      masthead={true}
     />
     <Section id="category_count" name={`Постов в категории: ${totalCount}`}>
       <Listing posts={nodes} />
