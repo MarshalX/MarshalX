@@ -5,18 +5,43 @@ import Section from "../components/Section"
 import ContactForm from "../components/ContactForm"
 import { graphql } from "gatsby"
 import ContactLinks from "../components/Listing/ContactLinks"
+import styled from "@emotion/styled"
+import Img from "gatsby-image"
 
-class Index extends Component {
+const StyledP = styled.p`
+  p {
+    margin-bottom: 0rem;
+  }
+`
+
+class TextContent extends Component {
+  render() {
+    return (
+      <Row>
+        <Col lg className="ml-auto text-justify">
+          <StyledP
+            className="lead"
+            dangerouslySetInnerHTML={{
+              __html: this.props.html,
+            }}
+          />
+        </Col>
+      </Row>
+    )
+  }
+}
+
+export default class Index extends Component {
   render() {
     const {
-      data: { homepage, posts, contact_links },
+      data: { index, posts },
     } = this.props
 
     const before_name = (
-      <img
+      <Img
         className="img-fluid mb-5 d-block mx-auto border-2 border-white rounded-circle"
-        src="profile.png"
-        alt=""
+        fixed={index.data.photo.localFile.childImageSharp.fixed}
+        alt={index.data.full_name.text}
       />
     )
 
@@ -25,82 +50,71 @@ class Index extends Component {
         <Section
           dark={true}
           id="about"
-          name={homepage.data.title.text}
+          name={index.data.full_name.text}
           before_name={before_name}
           masthead={true}
         >
-          <Row>
-            <Col lg="4" className="ml-auto">
-              <h5 className="text-center text-uppercase text-white">
-                Информация о себе
-              </h5>
-              <p
-                className="lead"
-                dangerouslySetInnerHTML={{
-                  __html: homepage.data.content.html,
-                }}
-              />
-            </Col>
-            <Col lg="4" className="mr-auto">
-              <h5 className="text-center text-uppercase text-white">
-                И чем я занимаюсь
-              </h5>
-              <p
-                className="lead"
-                dangerouslySetInnerHTML={{
-                  __html: homepage.data.footer.html,
-                }}
-              />
-            </Col>
-          </Row>
+          <TextContent html={index.data.summary.html} />
         </Section>
-        <Section id="awards" name="Недавние посты">
+        <Section id="posts" name="Недавние посты">
           <Listing posts={posts.nodes} />
         </Section>
         <Section dark={true} id="skills" name="Навыки">
-          <Row>
-            <Col lg className="ml-auto text-justify">
-              <p
-                className="lead"
-                dangerouslySetInnerHTML={{
-                  __html: homepage.data.footer.html,
-                }}
-              />
-            </Col>
-          </Row>
+          <TextContent html={index.data.skills.html} />
         </Section>
         <Section id="projects" name="Проекты">
           {/*TODO graphql*/}
           <p>Josko</p>
         </Section>
         <Section dark={true} id="contacts" name="Контакты">
-          <ContactLinks links={contact_links.data.body} />
+          <ContactLinks links={index.data.contact_links} />
         </Section>
         <Section id="contact-me" name="Связаться со мной">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <ContactForm />
-            </div>
-          </div>
+          <Row>
+            <Col lg="8" className="mx-auto">
+              <ContactForm email={index.data.contact_email.text} />
+            </Col>
+          </Row>
         </Section>
       </Layout>
     )
   }
 }
 
-export default Index
-
 export const pageQuery = graphql`
   query IndexQuery {
-    homepage: prismicHomepage {
+    index: prismicIndex {
       data {
-        title {
+        contact_email {
           text
         }
-        content {
+        contact_links {
+          id
+          primary {
+            icon {
+              text
+            }
+            link {
+              url
+            }
+          }
+        }
+        full_name {
+          text
+        }
+        photo {
+          localFile {
+            childImageSharp {
+              fixed {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+        skills {
           html
         }
-        footer {
+        summary {
           html
         }
       }
@@ -123,21 +137,6 @@ export const pageQuery = graphql`
                   name
                 }
               }
-            }
-          }
-        }
-      }
-    }
-    contact_links: prismicContactLinks {
-      data {
-        body {
-          id
-          primary {
-            icon {
-              text
-            }
-            link {
-              url
             }
           }
         }

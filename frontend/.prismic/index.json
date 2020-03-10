@@ -1,0 +1,79 @@
+{
+  "Main": {
+    "photo": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 250,
+          "height": 250
+        },
+        "thumbnails": [],
+        "label": "Photo"
+      }
+    },
+    "full_name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Full name"
+      }
+    },
+    "summary": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Summary"
+      }
+    },
+    "skills": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Skills"
+      }
+    },
+    "contact_email": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Contact email"
+      }
+    },
+    "contact_links": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "contact_link": []
+        },
+        "choices": {
+          "contact_link": {
+            "type": "Slice",
+            "fieldset": "Contact link",
+            "description": "Icon with link",
+            "icon": "insert_link",
+            "display": "list",
+            "non-repeat": {
+              "icon": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "icon"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}

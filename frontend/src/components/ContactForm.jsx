@@ -9,7 +9,7 @@ export default class ContactForm extends Component {
         name="sentMessage"
         id="contactForm"
         noValidate="novalidate"
-        action="https://formspree.io/Ilya@marshal.by"
+        action={`https://formspree.io/${this.props.email}`}
         method="POST"
       >
         <div className="control-group">

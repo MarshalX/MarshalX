@@ -7,7 +7,7 @@ const StyledCol = styled(Col)`
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.15;
-    margin-bottom: 0 !important;
+    margin-bottom: 1rem !important;
   }
 `
 
