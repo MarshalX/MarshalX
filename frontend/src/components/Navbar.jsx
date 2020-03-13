@@ -5,11 +5,14 @@ import "../utils/fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavLink = props => {
+  const { trigger } = props
+  const trigger_class = trigger ? "js-scroll-trigger" : ""
+
   return (
     <li className="nav-item mx-0 mx-lg-1">
       <Nav.Link
         href={`#${props.href}`}
-        className="py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+        className={`py-3 px-0 px-lg-3 rounded ${trigger_class}`}
       >
         {props.name}
       </Nav.Link>
@@ -42,13 +45,13 @@ export default class Navbar extends Component {
               <Nav className="ml-auto">
                 {this.props.main ? (
                   <>
-                    <NavLink href="about" name="Обо мне" />
+                    <NavLink href="about" name="Обо мне" trigger={true} />
                     <Link to="/posts">
                       <NavLink href="blog" name="Блог" />
                     </Link>
-                    <NavLink href="skills" name="Навыки" />
-                    <NavLink href="projects" name="Проекты" />
-                    <NavLink href="contacts" name="Контакты" />
+                    <NavLink href="skills" name="Навыки" trigger={true} />
+                    <NavLink href="projects" name="Проекты" trigger={true} />
+                    <NavLink href="contacts" name="Контакты" trigger={true} />
                   </>
                 ) : (
                   <>
