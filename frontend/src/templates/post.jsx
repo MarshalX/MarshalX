@@ -3,8 +3,10 @@ import { graphql } from "gatsby"
 import { Layout, Listing, SliceZone } from "../components"
 import Categories from "../components/Listing/Categories"
 import Section from "../components/Section"
+import website from "../../config"
+import SEO from "../components/SEO"
 
-const Post = ({ data: { prismicPost, posts } }) => {
+const Post = ({ data: { prismicPost, posts }, location }) => {
   const { data } = prismicPost
   let categories = false
   if (data.categories[0].category) {
@@ -18,7 +20,14 @@ const Post = ({ data: { prismicPost, posts } }) => {
   )
 
   return (
-    <Layout>
+    <Layout customSEO>
+      <SEO
+        title={`${data.title.text} | ${website.titleAlt}`}
+        pathname={location.pathname}
+        desc={data.description}
+        node={prismicPost}
+        article
+      />
       <Section
         dark={true}
         id="post_header"

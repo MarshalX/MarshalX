@@ -10,8 +10,28 @@ require("dotenv").config({
 
 const prismicHtmlSerializer = require("./src/gatsby/htmlSerializer")
 
+const website = require("./config")
+
+const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix
+
 module.exports = {
+  pathPrefix: website.pathPrefix,
+  siteMetadata: {
+    siteUrl: website.url + pathPrefix,
+    pathPrefix,
+    title: website.title,
+    titleAlt: website.titleAlt,
+    description: website.description,
+    banner: website.logo,
+    headline: website.headline,
+    siteLanguage: website.siteLanguage,
+    ogLanguage: website.ogLanguage,
+    author: website.author,
+    twitter: website.twitter,
+    facebook: website.facebook,
+  },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-emotion",
     "gatsby-transformer-sharp",
     {
@@ -34,5 +54,20 @@ module.exports = {
     },
     "gatsby-plugin-lodash",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: website.title,
+        short_name: website.titleAlt,
+        description: website.description,
+        start_url: pathPrefix,
+        background_color: website.backgroundColor,
+        theme_color: website.themeColor,
+        display: "standalone",
+        icon: website.favicon,
+      },
+    },
+    "gatsby-plugin-offline",
   ],
 }

@@ -5,13 +5,14 @@ import { ThemeProvider } from "emotion-theming"
 
 import { main, theme } from "../styles"
 import { Footer, Navbar, ScrollToTopButton } from "../components"
+import SEO from "./SEO"
 
 class PureLayout extends Component {
   render() {
     return (
       <ThemeProvider theme={theme}>
         <Global styles={main} />
-        {/*TODO SEO*/}
+        {!this.props.customSEO && <SEO />}
         <Navbar main={this.props.mainNavBar} />
         {this.props.children}
         <Footer data={this.props.data} />
