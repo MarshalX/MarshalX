@@ -15,7 +15,9 @@ jobs:
         with:
           node-version: '12.x'
       - name: Install dependencies
-        run: yarn install
+        run: |
+          cd frontend
+          yarn install
       - name: Deploy
         env:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
@@ -32,6 +34,7 @@ jobs:
           mkdir -p ~/.ssh/
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
+          cd frontend
           yarn deploy
 
           ssh-agent -k
