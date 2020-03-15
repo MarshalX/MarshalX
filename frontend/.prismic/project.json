@@ -34,6 +34,12 @@
         "label": "Border color"
       }
     },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Date"
+      }
+    },
     "name": {
       "type": "StructuredText",
       "config": {

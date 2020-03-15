@@ -49,6 +49,7 @@
                   "placeholder": "Paste your code here with a label",
                   "labels": [
                     "python",
+                    "cpp",
                     "javascript",
                     "css",
                     "scss",
@@ -96,8 +97,8 @@
                   "label": "text",
                   "placeholder": "Your content here",
                   "labels": [
-                    "text",
                     "python",
+                    "cpp",
                     "javascript",
                     "css",
                     "scss",

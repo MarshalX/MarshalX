@@ -142,7 +142,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    projects: allPrismicProject {
+    projects: allPrismicProject(sort: { fields: [data___date], order: DESC }) {
       nodes {
         id
         data {
@@ -157,6 +157,7 @@ export const pageQuery = graphql`
           body {
             ... on PrismicProjectBodyFooterLink {
               id
+              slice_type
               primary {
                 link {
                   url
@@ -168,7 +169,6 @@ export const pageQuery = graphql`
                   text
                 }
               }
-              slice_type
             }
             ... on PrismicProjectBodyFooterLinkButton {
               slice_type
