@@ -4,13 +4,15 @@
   "description": "My personal business card and guide \"from a passion for the profession,\" with a list of developed projects, received awards and acquired skills.",
   "version": "0.1.0",
   "license": "GNU GPL 3",
+  "homepage": "https://marshal.by/",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && cp ./CNAME ./public && gh-pages -d public"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
@@ -36,6 +38,7 @@
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-source-prismic": "^2.3.0-alpha.3",
     "gatsby-transformer-sharp": "^2.3.16",
+    "gh-pages": "^2.2.0",
     "jquery": "^3.4.1",
     "jquery-ui-bundle": "^1.12.1-migrate",
     "lodash": "^4.17.15",
