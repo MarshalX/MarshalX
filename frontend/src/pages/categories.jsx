@@ -5,6 +5,8 @@ import { graphql, Link } from "gatsby"
 import kebabCase from "lodash/kebabCase"
 import { ListGroup } from "react-bootstrap"
 import styled from "@emotion/styled"
+import website from "../../config"
+import SEO from "../components/SEO"
 
 const StyledLink = styled(Link)`
   font-size: 2.369rem;
@@ -15,6 +17,7 @@ export default class Categories extends Component {
   render() {
     const {
       data: { categories },
+      location,
     } = this.props
 
     const categorySet = new Set()
@@ -30,12 +33,16 @@ export default class Categories extends Component {
     const categoryList = Array.from(categorySet)
 
     return (
-      <Layout>
+      <Layout customSEO>
+        <SEO
+          title={`Все категории | ${website.titleAlt}`}
+          pathname={location.pathname}
+        />
         <Section dark={true} id="header" name="Категории" masthead={true} />
         <Section id="categories" compact={true}>
           <ListGroup>
             {categoryList.map(cat => (
-              <ListGroup.Item>
+              <ListGroup.Item key={cat}>
                 <StyledLink to={`/categories/${kebabCase(cat)}`}>
                   {cat}
                 </StyledLink>

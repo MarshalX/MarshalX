@@ -21,7 +21,7 @@ export default class Footer extends Component {
         <Container>
           <Row>
             {footer.data.body.map(column => (
-              <StyledCol md="4" lg="0">
+              <StyledCol md="4" lg="0" key={column.id}>
                 <h4 className="text-uppercase mb-4">
                   {column.primary.title.text}
                 </h4>

@@ -12,10 +12,11 @@ module.exports = {
 
   favicon: "src/favicon.png",
   shortName: "Marshal.by",
-  author: "Il`ya Semyonov (Marshal)",
   themeColor: "#ff5a00",
   backgroundColor: "#fff",
 
   twitter: "@ilya.marshal",
-  facebook: "Marshal.by",
+  openGraph: "Marshal.by",
+
+  ymAccount: 53800276,
 }

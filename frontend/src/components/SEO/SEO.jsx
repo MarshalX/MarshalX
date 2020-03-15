@@ -4,7 +4,9 @@ import { graphql, useStaticQuery } from "gatsby"
 import Twitter from "./Twitter"
 import OpenGraph from "./OpenGraph"
 
-const SEO = ({ title, desc, banner, pathname, article, node }) => {
+// TODO graphQL
+
+const SEO = ({ title, headline, desc, banner, pathname, article, node }) => {
   const { site } = useStaticQuery(query)
 
   const {
@@ -14,17 +16,17 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
       defaultTitle,
       defaultDescription,
       defaultBanner,
-      headline,
+      defaultHeadline,
       siteLanguage,
       ogLanguage,
-      author,
       twitter,
-      facebook,
+      openGraph,
     },
   } = site
 
   const seo = {
     title: title || defaultTitle,
+    headline: headline || title,
     description: desc || defaultDescription,
     image: `${siteUrl}${banner || defaultBanner}`,
     url: `${siteUrl}${pathname || ""}`,
@@ -32,33 +34,61 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
 
   // https://developers.google.com/search/docs/guides/intro-structured-data
 
+  const schemaOrgPerson = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Илья Семёнов (Marshal)",
+    givenName: "Илья",
+    familyName: "Семёнов",
+    additionalName: "Сергеевич",
+    gender: "Male",
+    birthDate: "1999-08-10",
+    birthPlace: {
+      "@type": "Place",
+      address: "Республика Беларусь, Минск",
+    },
+    email: "Ilya@marshal.by",
+    weight: 73,
+    jobTitle: "Python-разработчик",
+    nationality: "Республика Беларусь",
+    knowsLanguage: "ru-RU, en-US",
+    knowsAbout:
+      "Увлекаюсь IT-технологиями более 8 лет, 6 из которых направлены на программирование. Своей главной целью считаю внесение значительного вклада в развитие современного мира путем разработки полезного для пользователей многих стран продукта.",
+    url: "https://marshal.by/",
+    sameAs: [
+      "https://twitter.com/Ilya_Marshal",
+      "https://soundcloud.com/MarshalX",
+      "https://www.youtube.com/channel/UCAaEM1d1C-IQPCQpllTHAjA",
+      "https://www.facebook.com/Marshal.Ilya",
+      "https://t.me/MarshalX",
+      "https://github.com/MarshalX",
+      "https://www.instagram.com/ilya.marshal/",
+    ],
+  }
+
   const schemaOrgWebPage = {
     "@context": "http://schema.org",
     "@type": "WebPage",
     url: siteUrl,
-    headline,
+    headline: defaultHeadline,
     inLanguage: siteLanguage,
     mainEntityOfPage: siteUrl,
     description: defaultDescription,
     name: defaultTitle,
     author: {
-      "@type": "Person",
-      name: author,
+      ...schemaOrgPerson,
     },
     copyrightHolder: {
-      "@type": "Person",
-      name: author,
+      ...schemaOrgPerson,
     },
-    copyrightYear: "2020",
+    copyrightYear: new Date().getFullYear(),
     creator: {
-      "@type": "Person",
-      name: author,
+      ...schemaOrgPerson,
     },
     publisher: {
-      "@type": "Person",
-      name: author,
+      ...schemaOrgPerson,
     },
-    datePublished: buildTime,
+    datePublished: "2019-05-19",
     dateModified: buildTime,
     image: {
       "@type": "ImageObject",
@@ -118,21 +148,19 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
       "@context": "http://schema.org",
       "@type": "Article",
       author: {
-        "@type": "Person",
-        name: author,
+        ...schemaOrgPerson,
       },
       copyrightHolder: {
-        "@type": "Person",
-        name: author,
+        ...schemaOrgPerson,
       },
       copyrightYear: "2019",
       creator: {
-        "@type": "Person",
-        name: author,
+        ...schemaOrgPerson,
       },
       publisher: {
         "@type": "Organization",
-        name: author,
+        name: "Илья Семёнов (Marshal)",
+        url: `${siteUrl}`,
         logo: {
           "@type": "ImageObject",
           url: `${siteUrl}${defaultBanner}`,
@@ -193,11 +221,11 @@ const SEO = ({ title, desc, banner, pathname, article, node }) => {
       <OpenGraph
         desc={seo.description}
         image={seo.image}
-        title={seo.title}
+        title={seo.headline}
         type={article ? "article" : "website"}
         url={seo.url}
         locale={ogLanguage}
-        name={facebook}
+        name={openGraph}
       />
       <Twitter
         title={seo.title}
@@ -213,6 +241,7 @@ export default SEO
 
 SEO.defaultProps = {
   title: null,
+  defaultHeadline: null,
   desc: null,
   banner: null,
   pathname: null,
@@ -229,12 +258,11 @@ const query = graphql`
         defaultTitle: title
         defaultDescription: description
         defaultBanner: banner
-        headline
+        defaultHeadline: headline
         siteLanguage
         ogLanguage
-        author
         twitter
-        facebook
+        openGraph
       }
     }
   }

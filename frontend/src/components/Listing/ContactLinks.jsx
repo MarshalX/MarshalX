@@ -7,8 +7,8 @@ export default class ContactLinks extends Component {
     return (
       <ul className="list-inline mb-0 text-center">
         {links.map(link => (
-          <li className="list-inline-item">
-            <ContactLink key={link.id} input={link} />
+          <li className="list-inline-item" key={link.id}>
+            <ContactLink input={link} />
           </li>
         ))}
       </ul>

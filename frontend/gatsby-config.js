@@ -26,9 +26,8 @@ module.exports = {
     headline: website.headline,
     siteLanguage: website.siteLanguage,
     ogLanguage: website.ogLanguage,
-    author: website.author,
     twitter: website.twitter,
-    facebook: website.facebook,
+    openGraph: website.openGraph,
   },
   plugins: [
     "gatsby-plugin-react-helmet",

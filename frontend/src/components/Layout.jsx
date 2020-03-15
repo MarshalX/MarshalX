@@ -2,10 +2,12 @@ import React, { Component } from "react"
 import { graphql, StaticQuery } from "gatsby"
 import { Global } from "@emotion/core"
 import { ThemeProvider } from "emotion-theming"
+import { YMInitializer } from "react-yandex-metrika"
 
 import { main, theme } from "../styles"
 import { Footer, Navbar, ScrollToTopButton } from "../components"
 import SEO from "./SEO"
+import website from "../../config"
 
 class PureLayout extends Component {
   render() {
@@ -17,6 +19,15 @@ class PureLayout extends Component {
         {this.props.children}
         <Footer data={this.props.data} />
         <ScrollToTopButton />
+        <YMInitializer
+          accounts={[website.ymAccount]}
+          options={{
+            webvisor: true,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+          }}
+        />
       </ThemeProvider>
     )
   }
@@ -31,6 +42,7 @@ class Layout extends Component {
             footer: prismicFooter {
               data {
                 body {
+                  id
                   primary {
                     title {
                       text
@@ -55,3 +67,8 @@ class Layout extends Component {
 }
 
 export default Layout
+
+Layout.defaultProps = {
+  customSEO: false,
+  mainNavBar: false,
+}

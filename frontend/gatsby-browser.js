@@ -2,7 +2,7 @@ import $ from "jquery"
 import "jquery-ui-bundle"
 import "bootstrap"
 
-export const onRouteUpdate = ({ location, prevLocation }) => {
+export const onRouteUpdate = ({ location }) => {
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (
@@ -50,7 +50,7 @@ export const onInitialClientRender = () => {
 
   // Collapse Navbar
   const navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+    if ($("#mainNav").offset().top > 50) {
       $("#mainNav").addClass("navbar-shrink")
     } else {
       $("#mainNav").removeClass("navbar-shrink")

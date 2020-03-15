@@ -56,7 +56,7 @@ export default class Index extends Component {
         >
           <TextContent html={index.data.summary.html} />
         </Section>
-        <Section id="blog" name="Недавние посты">
+        <Section id="posts" name="Недавние посты">
           <Listing posts={posts.nodes} />
         </Section>
         <Section dark={true} id="skills" name="Навыки">
@@ -105,7 +105,7 @@ export const pageQuery = graphql`
         photo {
           localFile {
             childImageSharp {
-              fixed {
+              fixed(width: 250) {
                 ...GatsbyImageSharpFixed
               }
             }

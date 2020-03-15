@@ -2,15 +2,22 @@ import React, { Component } from "react"
 import { Layout, Listing } from "../components"
 import Section from "../components/Section"
 import { graphql } from "gatsby"
+import website from "../../config"
+import SEO from "../components/SEO"
 
 export default class Posts extends Component {
   render() {
     const {
       data: { posts },
+      location,
     } = this.props
 
     return (
-      <Layout>
+      <Layout customSEO>
+        <SEO
+          title={`Все публикации | ${website.titleAlt}`}
+          pathname={location.pathname}
+        />
         <Section dark={true} id="header" name="Блог" masthead={true} />
         <Section id="posts" compact={true}>
           <Listing posts={posts.nodes} />

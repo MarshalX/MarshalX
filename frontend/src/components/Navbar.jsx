@@ -5,17 +5,25 @@ import "../utils/fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const NavLink = props => {
-  const { trigger } = props
-  const trigger_class = trigger ? "js-scroll-trigger" : ""
+  const { anchor } = props
 
   return (
     <li className="nav-item mx-0 mx-lg-1">
-      <Nav.Link
-        href={`#${props.href}`}
-        className={`py-3 px-0 px-lg-3 rounded ${trigger_class}`}
-      >
-        {props.name}
-      </Nav.Link>
+      {anchor ? (
+        <a
+          href={`#${props.href}`}
+          className={`nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger`}
+        >
+          {props.name}
+        </a>
+      ) : (
+        <Link
+          to={`${props.href}`}
+          className={`nav-link py-3 px-0 px-lg-3 rounded`}
+        >
+          {props.name}
+        </Link>
+      )}
     </li>
   )
 }
@@ -45,25 +53,17 @@ export default class Navbar extends Component {
               <Nav className="ml-auto">
                 {this.props.main ? (
                   <>
-                    <NavLink href="about" name="Обо мне" trigger={true} />
-                    <Link to="/posts">
-                      <NavLink href="blog" name="Блог" />
-                    </Link>
-                    <NavLink href="skills" name="Навыки" trigger={true} />
-                    <NavLink href="projects" name="Проекты" trigger={true} />
-                    <NavLink href="contacts" name="Контакты" trigger={true} />
+                    <NavLink href="about" name="Обо мне" anchor />
+                    <NavLink href="posts" name="Блог" />
+                    <NavLink href="skills" name="Навыки" anchor />
+                    <NavLink href="projects" name="Проекты" anchor />
+                    <NavLink href="contacts" name="Контакты" anchor />
                   </>
                 ) : (
                   <>
-                    <Link to="/">
-                      <NavLink href="home" name="Главная" />
-                    </Link>
-                    <Link to="/posts">
-                      <NavLink href="blog" name="Блог" />
-                    </Link>
-                    <Link to="/categories">
-                      <NavLink href="categories" name="Категории" />
-                    </Link>
+                    <NavLink href="/" name="Главная" />
+                    <NavLink href="posts" name="Блог" />
+                    <NavLink href="categories" name="Категории" />
                   </>
                 )}
               </Nav>

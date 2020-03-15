@@ -281,7 +281,7 @@ const main = css`
     opacity: 0;
   }
 
-  .floating-label-form-group:not(:first-child) {
+  .floating-label-form-group:not(:first-of-type) {
     padding-left: 14px;
     border-left: 1px solid #e9ecef;
   }
@@ -295,7 +295,7 @@ const main = css`
     color: #ff5a00;
   }
 
-  form .row:first-child .floating-label-form-group {
+  form .row:first-of-type .floating-label-form-group {
     border-top: 1px solid #e9ecef;
   }
 

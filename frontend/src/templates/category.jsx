@@ -2,14 +2,21 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Layout, Listing } from "../components"
 import Section from "../components/Section"
+import website from "../../config"
+import SEO from "../components/SEO"
 
 const Category = ({
   pageContext: { category },
   data: {
     posts: { nodes, totalCount },
   },
+  location,
 }) => (
-  <Layout>
+  <Layout customSEO>
+    <SEO
+      title={`Категория: ${category} | ${website.titleAlt}`}
+      pathname={location.pathname}
+    />
     <Section
       dark={true}
       id="category"
