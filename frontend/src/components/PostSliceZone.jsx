@@ -29,7 +29,7 @@ const Content = styled.div`
   }
 `
 
-export default class SliceZone extends Component {
+export default class PostSliceZone extends Component {
   render() {
     const { allSlices } = this.props
     const slice = allSlices.map(s => {

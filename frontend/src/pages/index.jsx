@@ -7,6 +7,7 @@ import { graphql } from "gatsby"
 import ContactLinks from "../components/Listing/ContactLinks"
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
+import Projects from "../components/Listing/Projects"
 
 const StyledP = styled.p`
   p {
@@ -34,7 +35,7 @@ class TextContent extends Component {
 export default class Index extends Component {
   render() {
     const {
-      data: { index, posts },
+      data: { index, posts, projects },
     } = this.props
 
     const before_name = (
@@ -63,8 +64,7 @@ export default class Index extends Component {
           <TextContent html={index.data.skills.html} />
         </Section>
         <Section id="projects" name="Проекты">
-          {/*TODO graphql*/}
-          <p>Josko</p>
+          <Projects projects={projects.nodes} />
         </Section>
         <Section dark={true} id="contacts" name="Контакты">
           <ContactLinks links={index.data.contact_links} />
@@ -135,6 +135,60 @@ export const pageQuery = graphql`
               document {
                 data {
                   name
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    projects: allPrismicProject {
+      nodes {
+        id
+        data {
+          background_color
+          border_color
+          name {
+            html
+          }
+          description {
+            html
+          }
+          body {
+            ... on PrismicProjectBodyFooterLink {
+              id
+              primary {
+                link {
+                  url
+                }
+                icon {
+                  text
+                }
+                text {
+                  text
+                }
+              }
+              slice_type
+            }
+            ... on PrismicProjectBodyFooterLinkButton {
+              slice_type
+              primary {
+                link {
+                  url
+                }
+                icon {
+                  text
+                }
+                text {
+                  text
+                }
+              }
+            }
+            ... on PrismicProjectBodyFooterText {
+              slice_type
+              primary {
+                text {
+                  html
                 }
               }
             }

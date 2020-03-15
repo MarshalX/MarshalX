@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Layout, Listing, SliceZone } from "../components"
+import { Layout, Listing, PostSliceZone } from "../components"
 import Categories from "../components/Listing/Categories"
 import Section from "../components/Section"
 import website from "../../config"
@@ -35,7 +35,7 @@ const Post = ({ data: { prismicPost, posts }, location }) => {
         masthead={true}
       />
       <Section id="post" name={header}>
-        <SliceZone allSlices={data.body} />
+        <PostSliceZone allSlices={data.body} />
       </Section>
       <Section dark={true} id="recent_posts" name="Недавние посты">
         <Listing posts={posts.nodes} />

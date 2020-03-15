@@ -407,10 +407,6 @@ const main = css`
     font-family: "Montserrat", serif;
     line-height: 1.15;
   }
-
-  .card {
-    min-width: 290px;
-  }
 `
 
 export default main

@@ -1,8 +1,6 @@
 import React from "react"
 
-export const onRenderBody = (
-  { setPostBodyComponents, setBodyAttributes }
-) => {
+export const onRenderBody = ({ setPostBodyComponents, setBodyAttributes }) => {
   setPostBodyComponents([
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
