@@ -21,10 +21,10 @@ loadLanguages(Array.from(languages))
 
 const { Elements } = RichText
 
-const CodeFragment = element => {
-  return `<code class="language-${element.label}">${Prism.highlight(
-    element.text,
-    Prism.languages[element.label]
+const CodeFragment = (lang, code) => {
+  return `<code class="language-${lang}">${Prism.highlight(
+    code,
+    Prism.languages[lang]
   )}</code>`
 }
 
@@ -34,12 +34,15 @@ const htmlSerializer = (type, element, content) => {
       if (element.data.label === "quote") {
         return `<blockquote><p>${content}</p></blockquote>`
       }
+      if (element.data.label === "text") {
+        return `<code class="language-text">${content}</code>`
+      }
 
-      return `${CodeFragment(element)}`
+      return `${CodeFragment(element.data.label, content)}`
     }
     case Elements.preformatted: {
       return `<pre class="language-${element.label}">${CodeFragment(
-        element
+        element.label, element.text
       )}</pre>`
     }
     default: {

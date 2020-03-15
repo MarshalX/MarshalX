@@ -41,11 +41,11 @@
             "icon": "code",
             "display": "list",
             "non-repeat": {
-              "code-block": {
+              "code_block": {
                 "type": "StructuredText",
                 "config": {
                   "multi": "preformatted",
-                  "label": "code-block",
+                  "label": "code_block",
                   "placeholder": "Paste your code here with a label",
                   "labels": [
                     "python",
@@ -75,7 +75,7 @@
               "quote": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, hyperlink, list-item, o-list-item, o-list-item",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, hyperlink, list-item, o-list-item",
                   "allowTargetBlank": true,
                   "label": "quote",
                   "placeholder": "Quote"
@@ -93,10 +93,11 @@
               "text": {
                 "type": "StructuredText",
                 "config": {
-                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+                  "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item",
                   "label": "text",
                   "placeholder": "Your content here",
                   "labels": [
+                    "text",
                     "python",
                     "cpp",
                     "javascript",
