@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://marshal.by/daaa</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/second-post</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/joooskoo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/categories/the-second</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/categories/test-category</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/otnoshenie-k-kompaniyam-pomogayushchim-prizyvnikam</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/kak-ustroen-slovar-dict-v-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/gil-global-interpreter-lock-v-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/python-interpretatory-baytkod-pyc-pyo-pyd-jit-i-prochee</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/vstroennye-tipy-v-python-i-interesnye-momenty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/tipizaciya-v-python-i-ne-nado-heytit-za-dinamicheskuyu-ili-nado</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/categories/мнение-отношение</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/categories/про-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/posts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
