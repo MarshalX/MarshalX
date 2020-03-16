@@ -44,16 +44,16 @@ export const onInitialClientRender = () => {
 
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
-    target: "#mainNav",
+    target: "#nav",
     offset: 80,
   })
 
   // Collapse Navbar
   const navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 50) {
-      $("#mainNav").addClass("navbar-shrink")
+    if ($("#nav").offset().top > 50) {
+      $("#nav").addClass("navbar-shrink")
     } else {
-      $("#mainNav").removeClass("navbar-shrink")
+      $("#nav").removeClass("navbar-shrink")
     }
   }
   // Collapse now if page is not at top

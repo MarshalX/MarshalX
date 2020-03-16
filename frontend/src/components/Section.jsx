@@ -22,7 +22,7 @@ const StyledMastheadSection = styled(StyledSection)`
   padding-bottom: 2rem;
 
   h1 {
-    font-size: 3rem;
+    font-size: 8vw;
     line-height: 3rem;
   }
 

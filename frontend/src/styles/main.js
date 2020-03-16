@@ -17,6 +17,10 @@ const main = css`
     font-family: "Montserrat", serif;
   }
 
+  p {
+    margin-bottom: 0rem;
+  }
+
   hr.star-light,
   hr.star-dark {
     max-width: 15rem;
@@ -86,86 +90,17 @@ const main = css`
     line-height: 3.1rem;
   }
 
-  #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-weight: 700;
-    font-family: "Montserrat", serif;
+  #nav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
-  #mainNav .navbar-brand {
-    color: #fff;
-  }
-
-  #mainNav .navbar-nav {
-    margin-top: 1rem;
-    letter-spacing: 0.0625rem;
-  }
-
-  #mainNav .navbar-nav li.nav-item a.nav-link {
-    color: #fff;
-  }
-
-  #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-    color: #ff5a00;
-  }
-
-  #mainNav .navbar-nav li.nav-item a.nav-link:active,
-  #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-    color: #fff;
-  }
-
-  #mainNav .navbar-nav li.nav-item a.nav-link.active {
-    color: #ff5a00;
-  }
-
-  #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem;
-  }
-
-  @media (min-width: 992px) {
-    #mainNav {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-      -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-      transition: padding-top 0.3s, padding-bottom 0.3s;
-    }
-
-    #mainNav .navbar-brand {
-      font-size: 2em;
-      -webkit-transition: font-size 0.3s;
-      transition: font-size 0.3s;
-    }
-
-    #mainNav .navbar-nav {
-      margin-top: 0;
-    }
-
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-      color: #fff;
-      background: #ff5a00;
-    }
-
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus,
-    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-      color: #fff;
-      background: #ff5a00;
-    }
-
-    #mainNav.navbar-shrink {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-
-    #mainNav.navbar-shrink .navbar-brand {
-      font-size: 1.5em;
-    }
+  #nav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
   }
 
   .lead {
-    text-indent: 2em;
+    // text-indent: 2em;
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.15;

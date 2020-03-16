@@ -10,7 +10,10 @@ const Post = ({ data: { prismicPost, posts }, location }) => {
   const { data } = prismicPost
   let categories = false
   if (data.categories[0].category) {
-    categories = data.categories.map(c => c.category.document[0].data.name)
+    categories = data.categories.map(c => [
+      c.category.document[0].uid,
+      c.category.document[0].data.name,
+    ])
   }
 
   const header = (
@@ -23,6 +26,7 @@ const Post = ({ data: { prismicPost, posts }, location }) => {
     <Layout customSEO>
       <SEO
         title={`${data.title.text} | ${website.titleAlt}`}
+        headline={`${data.title.text}`}
         pathname={location.pathname}
         desc={data.description}
         node={prismicPost}
@@ -61,6 +65,7 @@ export const pageQuery = graphql`
         categories {
           category {
             document {
+              uid
               data {
                 name
               }
@@ -129,6 +134,7 @@ export const pageQuery = graphql`
           categories {
             category {
               document {
+                uid
                 data {
                   name
                 }

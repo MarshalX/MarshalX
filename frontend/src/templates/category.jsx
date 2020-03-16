@@ -6,21 +6,22 @@ import website from "../../config"
 import SEO from "../components/SEO"
 
 const Category = ({
-  pageContext: { category },
   data: {
     posts: { nodes, totalCount },
+    category,
   },
   location,
 }) => (
   <Layout customSEO>
     <SEO
-      title={`Категория: ${category} | ${website.titleAlt}`}
+      title={`Категория: ${category.data.name} | ${website.titleAlt}`}
+      headline={`Категория: ${category.data.name}`}
       pathname={location.pathname}
     />
     <Section
       dark={true}
       id="category"
-      name={`Категория: ${category}`}
+      name={`Категория: ${category.data.name}`}
       masthead={true}
     />
     <Section id="category_count" name={`Постов в категории: ${totalCount}`}>
@@ -33,15 +34,19 @@ export default Category
 
 export const pageQuery = graphql`
   query CategoryPage($category: String!) {
+    category: prismicCategory(uid: { eq: $category }) {
+      uid
+      data {
+        name
+      }
+    }
     posts: allPrismicPost(
       sort: { fields: [data___date], order: DESC }
       filter: {
         data: {
           categories: {
             elemMatch: {
-              category: {
-                document: { elemMatch: { data: { name: { eq: $category } } } }
-              }
+              category: { document: { elemMatch: { uid: { eq: $category } } } }
             }
           }
         }
@@ -58,6 +63,7 @@ export const pageQuery = graphql`
           categories {
             category {
               document {
+                uid
                 data {
                   name
                 }

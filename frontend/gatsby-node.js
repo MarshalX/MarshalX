@@ -26,6 +26,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 categories {
                   category {
                     document {
+                      uid
                       data {
                         name
                       }
@@ -47,12 +48,12 @@ exports.createPages = async ({ graphql, actions }) => {
   postsList.forEach(edge => {
     if (edge.node.data.categories[0].category) {
       edge.node.data.categories.forEach(cat => {
-        categorySet.add(cat.category.document[0].data.name)
+        categorySet.add(cat.category.document[0].uid)
       })
     }
 
     createPage({
-      path: `/${edge.node.uid}`,
+      path: `/blog/post/${edge.node.uid}`,
       component: postTemplate,
       context: {
         uid: edge.node.uid,
@@ -64,7 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   categoryList.forEach(category => {
     createPage({
-      path: `/categories/${_.kebabCase(category)}`,
+      path: `/blog/category/${category}`,
       component: categoryTemplate,
       context: {
         category,

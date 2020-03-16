@@ -54,6 +54,15 @@ module.exports = {
     "gatsby-plugin-lodash",
     "gatsby-plugin-sharp",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: website.url,
+        sitemap: `${website.url}/sitemap.xml`,
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {

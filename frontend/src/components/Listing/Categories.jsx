@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import kebabCase from "lodash/kebabCase"
 
 export default class Categories extends Component {
   render() {
@@ -10,7 +9,7 @@ export default class Categories extends Component {
         {categories.map((cat, i) => (
           <React.Fragment key={cat}>
             {!!i && ", "}
-            <Link to={`/categories/${kebabCase(cat)}`}>{cat}</Link>
+            <Link to={`/blog/category/${cat[0]}`}>{cat[1]}</Link>
           </React.Fragment>
         ))}
       </>

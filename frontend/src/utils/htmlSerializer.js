@@ -42,7 +42,8 @@ const htmlSerializer = (type, element, content) => {
     }
     case Elements.preformatted: {
       return `<pre class="language-${element.label}">${CodeFragment(
-        element.label, element.text
+        element.label,
+        element.text
       )}</pre>`
     }
     default: {

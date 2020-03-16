@@ -22,7 +22,9 @@ export default class ListItem extends Component {
           {node.data.date} —{" "}
           {categories && <Categories categories={categories} />}
         </StyledP>
-        <StyledLink to={node.uid}>{node.data.title.text}</StyledLink>
+        <StyledLink to={`/blog/post/${node.uid}`}>
+          {node.data.title.text}
+        </StyledLink>
       </ListGroup.Item>
     )
   }

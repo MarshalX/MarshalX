@@ -1,13 +1,6 @@
 import React, { Component } from "react"
 import { ProjectSliceZone } from "./index"
 import { Card } from "react-bootstrap"
-import styled from "@emotion/styled"
-
-const StyledHeader = styled(Card.Header)`
-  p {
-    margin-bottom: 0rem;
-  }
-`
 
 export default class Project extends Component {
   render() {
@@ -17,7 +10,7 @@ export default class Project extends Component {
         border={data.border_color.toLowerCase()}
         bg={data.background_color.toLowerCase()}
       >
-        <StyledHeader
+        <Card.Header
           className={`border-${data.border_color.toLowerCase()}`}
           dangerouslySetInnerHTML={{
             __html: data.name.html,

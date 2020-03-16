@@ -1,9 +1,9 @@
 import React, { Component } from "react"
-import { Layout, Listing } from "../components"
-import Section from "../components/Section"
+import { Layout, Listing } from "../../components"
+import Section from "../../components/Section"
 import { graphql } from "gatsby"
-import website from "../../config"
-import SEO from "../components/SEO"
+import website from "../../../config"
+import SEO from "../../components/SEO"
 
 export default class Posts extends Component {
   render() {
@@ -16,6 +16,7 @@ export default class Posts extends Component {
       <Layout customSEO>
         <SEO
           title={`Все публикации | ${website.titleAlt}`}
+          headline={`Все публикации`}
           pathname={location.pathname}
         />
         <Section dark={true} id="header" name="Блог" masthead={true} />
@@ -40,6 +41,7 @@ export const pageQuery = graphql`
           categories {
             category {
               document {
+                uid
                 data {
                   name
                 }

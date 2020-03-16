@@ -1,12 +1,11 @@
 import React, { Component } from "react"
-import { Layout } from "../components"
-import Section from "../components/Section"
+import { Layout } from "../../components"
+import Section from "../../components/Section"
 import { graphql, Link } from "gatsby"
-import kebabCase from "lodash/kebabCase"
 import { ListGroup } from "react-bootstrap"
 import styled from "@emotion/styled"
-import website from "../../config"
-import SEO from "../components/SEO"
+import website from "../../../config"
+import SEO from "../../components/SEO"
 
 const StyledLink = styled(Link)`
   font-size: 2.369rem;
@@ -20,17 +19,18 @@ export default class Categories extends Component {
       location,
     } = this.props
 
-    const categorySet = new Set()
+    const categoryDict = {}
 
     categories.edges.forEach(edge => {
       if (edge.node.data.categories[0].category) {
         edge.node.data.categories.forEach(cat => {
-          categorySet.add(cat.category.document[0].data.name)
+          if (!categoryDict[cat.category.document[0].uid]) {
+            categoryDict[cat.category.document[0].uid] =
+              cat.category.document[0].data.name
+          }
         })
       }
     })
-
-    const categoryList = Array.from(categorySet)
 
     return (
       <Layout customSEO>
@@ -41,10 +41,10 @@ export default class Categories extends Component {
         <Section dark={true} id="header" name="Категории" masthead={true} />
         <Section id="categories" compact={true}>
           <ListGroup>
-            {categoryList.map(cat => (
-              <ListGroup.Item key={cat}>
-                <StyledLink to={`/categories/${kebabCase(cat)}`}>
-                  {cat}
+            {Object.entries(categoryDict).map(data => (
+              <ListGroup.Item key={data[0]}>
+                <StyledLink to={`/blog/category/${data[0]}`}>
+                  {data[1]}
                 </StyledLink>
               </ListGroup.Item>
             ))}
@@ -66,6 +66,7 @@ export const pageQuery = graphql`
             categories {
               category {
                 document {
+                  uid
                   data {
                     name
                   }

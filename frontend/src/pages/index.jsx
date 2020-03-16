@@ -11,7 +11,7 @@ import Projects from "../components/Listing/Projects"
 
 const StyledP = styled.p`
   p {
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
 `
 
