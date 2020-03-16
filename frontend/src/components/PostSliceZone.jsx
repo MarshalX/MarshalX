@@ -8,6 +8,7 @@ const Content = styled.div`
   padding: 6rem 0;
   p,
   li {
+    margin-bottom: 1rem;
     letter-spacing: -0.003em;
     --baseline-multiplier: 0.179;
     --x-height-multiplier: 0.35;
