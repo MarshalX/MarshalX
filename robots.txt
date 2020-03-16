@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://marshal.by/sitemap.xml
+Host: https://marshal.by
