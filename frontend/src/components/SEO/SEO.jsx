@@ -6,7 +6,16 @@ import OpenGraph from "./OpenGraph"
 
 // TODO graphQL
 
-const SEO = ({ title, headline, desc, banner, pathname, article, node }) => {
+const SEO = ({
+  title,
+  headline,
+  desc,
+  banner,
+  pathname,
+  article,
+  blog,
+  node,
+}) => {
   const { site } = useStaticQuery(query)
 
   const {
@@ -26,7 +35,7 @@ const SEO = ({ title, headline, desc, banner, pathname, article, node }) => {
 
   const seo = {
     title: title || defaultTitle,
-    headline: headline || title,
+    headline: headline || title || defaultHeadline,
     description: desc || defaultDescription,
     image: `${siteUrl}${banner || defaultBanner}`,
     url: `${siteUrl}${pathname || ""}`,
@@ -98,50 +107,21 @@ const SEO = ({ title, headline, desc, banner, pathname, article, node }) => {
 
   // Initial breadcrumb list
 
-  const itemListElement = [
-    {
-      "@type": "ListItem",
-      item: {
-        "@id": `${siteUrl}#about`,
-        name: "Обо мне",
-      },
-      position: 1,
-    },
-    {
-      "@type": "ListItem",
-      item: {
-        "@id": `${siteUrl}/posts`,
-        name: "Блог",
-      },
-      position: 2,
-    },
-    {
-      "@type": "ListItem",
-      item: {
-        "@id": `${siteUrl}#skills`,
-        name: "Навыки",
-      },
-      position: 3,
-    },
-    {
-      "@type": "ListItem",
-      item: {
-        "@id": `${siteUrl}#projects`,
-        name: "Проекты",
-      },
-      position: 4,
-    },
-    {
-      "@type": "ListItem",
-      item: {
-        "@id": `${siteUrl}#contacts`,
-        name: "Контакты",
-      },
-      position: 5,
-    },
-  ]
+  const itemListElement = []
+  let breadcrumbPosition = 1
 
   let schemaArticle = null
+
+  if (blog) {
+    itemListElement.push({
+      "@type": "ListItem",
+      item: {
+        "@id": `${siteUrl}/blog/posts`,
+        name: "Блог",
+      },
+      position: breadcrumbPosition++,
+    })
+  }
 
   if (article) {
     schemaArticle = {
@@ -153,7 +133,7 @@ const SEO = ({ title, headline, desc, banner, pathname, article, node }) => {
       copyrightHolder: {
         ...schemaOrgPerson,
       },
-      copyrightYear: "2019",
+      copyrightYear: "2020",
       creator: {
         ...schemaOrgPerson,
       },
@@ -169,10 +149,10 @@ const SEO = ({ title, headline, desc, banner, pathname, article, node }) => {
       datePublished: node.first_publication_date,
       dateModified: node.last_publication_date,
       description: seo.description,
-      headline: seo.title,
+      headline: seo.headline,
       inLanguage: siteLanguage,
       url: seo.url,
-      name: seo.title,
+      name: seo.headline,
       image: {
         "@type": "ImageObject",
         url: seo.image,
@@ -180,16 +160,29 @@ const SEO = ({ title, headline, desc, banner, pathname, article, node }) => {
       mainEntityOfPage: seo.url,
     }
 
-    // Push current blogpost into breadcrumb list
-    itemListElement.push({
-      "@type": "ListItem",
-      item: {
-        "@id": seo.url,
-        name: seo.title,
-      },
-      position: 6,
-    })
+    node.data.categories.map(cat =>
+      cat.category.document.map(doc =>
+        itemListElement.push({
+          "@type": "ListItem",
+          item: {
+            "@id": `${siteUrl}/category/${doc.uid}`,
+            name: `${doc.data.name}`,
+          },
+          position: breadcrumbPosition++,
+        })
+      )
+    )
   }
+
+  // push current page to breadcrumb
+  itemListElement.push({
+    "@type": "ListItem",
+    item: {
+      "@id": seo.url,
+      name: seo.headline,
+    },
+    position: breadcrumbPosition++,
+  })
 
   const breadcrumb = {
     "@context": "http://schema.org",

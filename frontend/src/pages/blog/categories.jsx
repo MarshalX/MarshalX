@@ -36,7 +36,9 @@ export default class Categories extends Component {
       <Layout customSEO>
         <SEO
           title={`Все категории | ${website.titleAlt}`}
+          headline={`Все категории`}
           pathname={location.pathname}
+          blog
         />
         <Section dark={true} id="header" name="Категории" masthead={true} />
         <Section id="categories" compact={true}>

@@ -18,6 +18,7 @@ export default class Posts extends Component {
           title={`Все публикации | ${website.titleAlt}`}
           headline={`Все публикации`}
           pathname={location.pathname}
+          blog
         />
         <Section dark={true} id="header" name="Блог" masthead={true} />
         <Section id="posts" compact={true}>

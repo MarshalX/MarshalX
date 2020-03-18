@@ -30,6 +30,7 @@ const Post = ({ data: { prismicPost, posts }, location }) => {
         pathname={location.pathname}
         desc={data.description}
         node={prismicPost}
+        blog
         article
       />
       <Section

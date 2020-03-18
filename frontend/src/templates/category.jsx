@@ -17,6 +17,7 @@ const Category = ({
       title={`Категория: ${category.data.name} | ${website.titleAlt}`}
       headline={`Категория: ${category.data.name}`}
       pathname={location.pathname}
+      blog
     />
     <Section
       dark={true}
