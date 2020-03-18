@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://marshal.by/blog/post/21-srok-formirovaniya-privychki</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/rezhim-stavit-ramki-eto-ploho-dlya-tvorchestva-na-primere-marmoka-yutuber</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/zoho-zhloby-spark-luchshiy-klient</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/otnoshenie-k-kompaniyam-pomogayushchim-prizyvnikam</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/kak-ustroen-slovar-dict-v-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/gil-global-interpreter-lock-v-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/python-interpretatory-baytkod-pyc-pyo-pyd-jit-i-prochee</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/vstroennye-tipy-v-python-i-interesnye-momenty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/tipizaciya-v-python-i-ne-nado-heytit-za-dinamicheskuyu-ili-nado</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/bot-dlya-prosmotra-aktivnyh-polzovateley-v-telegram-kanale</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/mnenie-otnoshenie</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/category/raznoe</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/pro-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/category/poznavatelno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/posts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
