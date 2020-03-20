@@ -1,0 +1,153 @@
+{
+  "Main": {
+    "background_color": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Light",
+          "Primary",
+          "Secondary",
+          "Success",
+          "Danger",
+          "Warning",
+          "Info",
+          "Dark"
+        ],
+        "default_value": "Light",
+        "label": "Background color"
+      }
+    },
+    "border_color": {
+      "type": "Select",
+      "config": {
+        "options": [
+          "Warning",
+          "Primary",
+          "Secondary",
+          "Success",
+          "Danger",
+          "Info",
+          "Light",
+          "Dark"
+        ],
+        "default_value": "Warning",
+        "label": "Border color"
+      }
+    },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Date"
+      }
+    },
+    "name": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph, strong, em",
+        "label": "Name"
+      }
+    },
+    "description": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph, preformatted, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink, image, embed, list-item, o-list-item, o-list-item",
+        "allowTargetBlank": true,
+        "label": "Description"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "footer_link_button": [],
+          "footer_link": [],
+          "footer_text": [],
+          "image": []
+        },
+        "choices": {
+          "footer_link_button": {
+            "type": "Slice",
+            "fieldset": "Footer`s link button",
+            "description": "Link with icon as primary button",
+            "icon": "radio_button_checked",
+            "display": "list",
+            "non-repeat": {
+              "icon": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "icon"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "allowTargetBlank": true,
+                  "label": "link"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "name"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "footer_link": {
+            "type": "Slice",
+            "fieldset": "Footer`s link",
+            "description": "Link with icon",
+            "icon": "insert_link",
+            "display": "list",
+            "non-repeat": {
+              "icon": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "icon"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "allowTargetBlank": true,
+                  "label": "link"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph",
+                  "label": "name"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "footer_text": {
+            "type": "Slice",
+            "fieldset": "Footer`s text",
+            "description": "Simple text",
+            "icon": "text_fields",
+            "display": "list",
+            "non-repeat": {
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading4, heading5, heading6, strong, em, hyperlink",
+                  "allowTargetBlank": true,
+                  "label": "text"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  }
+}
