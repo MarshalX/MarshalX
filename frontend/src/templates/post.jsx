@@ -5,6 +5,7 @@ import Categories from "../components/Listing/Categories"
 import Section from "../components/Section"
 import website from "../../config"
 import SEO from "../components/SEO"
+import ShortLinkButton from "../components/ShortLinkButton"
 
 const Post = ({ data: { prismicPost, posts }, location }) => {
   const { data } = prismicPost
@@ -18,7 +19,8 @@ const Post = ({ data: { prismicPost, posts }, location }) => {
 
   const header = (
     <>
-      {data.date} — {categories && <Categories categories={categories} />}
+      {data.date} — {categories && <Categories categories={categories} />}{" "}
+      <ShortLinkButton uid={data.uid} />
     </>
   )
 

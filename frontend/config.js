@@ -19,4 +19,6 @@ module.exports = {
   openGraph: "Marshal.by",
 
   ymAccount: 53800276,
+
+  instantView: "6141ccb36b5d8f",
 }

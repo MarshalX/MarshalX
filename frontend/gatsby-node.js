@@ -1,4 +1,5 @@
 const _ = require("lodash")
+const CryptoJS = require("crypto-js")
 
 const wrapper = promise =>
   promise.then(result => {
@@ -9,7 +10,9 @@ const wrapper = promise =>
   })
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createRedirect } = actions
+
+  const config = require("./config")
 
   const postTemplate = require.resolve("./src/templates/post.jsx")
   const categoryTemplate = require.resolve("./src/templates/category.jsx")
@@ -52,12 +55,27 @@ exports.createPages = async ({ graphql, actions }) => {
       })
     }
 
+    const post_path = `/blog/post/${edge.node.uid}`
+    const post_uid = `${CryptoJS.MD5(edge.node.uid)}`.slice(0, 6)
+    const instant_view_path = `https://t.me/iv?url=${config.url}${post_path}&rhash=${config.instantView}`
+
     createPage({
-      path: `/blog/post/${edge.node.uid}`,
+      path: post_path,
       component: postTemplate,
       context: {
         uid: edge.node.uid,
       },
+    })
+
+    createRedirect({
+      fromPath: `/${post_uid}`,
+      toPath: post_path,
+      isPermanent: true,
+    })
+    createRedirect({
+      fromPath: `/${post_uid}/iv`,
+      toPath: instant_view_path,
+      isPermanent: false,
     })
   })
 
