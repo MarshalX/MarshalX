@@ -2,7 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://marshal.by/blog/post/21-srok-formirovaniya-privychki</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/uchastie-v-pervoaprelskoy-shutke-vk-vk-coin</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/terms</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/dzhon-sketmen</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/policy</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/navigaciya</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/rezhim-stavit-ramki-eto-ploho-dlya-tvorchestva-na-primere-marmoka-yutuber</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/zoho-zhloby-spark-luchshiy-klient</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -14,14 +16,15 @@
 <url> <loc>https://marshal.by/blog/post/upravlenie-yandeks-stanciey-otpravka-komand-iz-koda</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/vstroennye-tipy-v-python-i-interesnye-momenty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/dependency-injection-v-servisah-bota</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/bot-dlya-prosmotra-aktivnyh-polzovateley-v-telegram-kanale</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/otsutstvie-avtorizacii-socialnyy-monitoring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/statistika-i-analitika-dlya-botov-na-primere-bota-yandeks-muzyki-i-servisa-chatbase</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/xss-ne-eskeypnutye-dannye-u-yandeks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/making-a-pypi-friendly-readme</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/tipizaciya-v-python-i-ne-nado-heytit-za-dinamicheskuyu-ili-nado</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/statistika-i-analitika-dlya-botov-na-primere-bota-yandeks-muzyki-i-servisa-chatbase</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/making-a-pypi-friendly-readme</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/bot-dlya-prosmotra-aktivnyh-polzovateley-v-telegram-kanale</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/xss-ne-eskeypnutye-dannye-u-yandeks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/mnenie-otnoshenie</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/raznoe</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/category/zoom-telegram-integration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/zametki</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/covid-19</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/pro-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
