@@ -119,6 +119,15 @@ export const pageQuery = graphql`
               }
             }
           }
+          ... on PrismicPostBodyEmbed {
+            slice_type
+            id
+            primary {
+              plane_html {
+                text
+              }
+            }
+          }
         }
       }
     }

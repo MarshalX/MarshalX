@@ -44,6 +44,13 @@ export default class PostSliceZone extends Component {
           return <Image key={s.id} input={s} />
         case "quote":
           return <Quote key={s.id} input={s} />
+        case "embed":
+          return (
+            <span
+              key={s.id}
+              dangerouslySetInnerHTML={{ __html: s.primary.plane_html.text }}
+            />
+          )
         default:
           return null
       }

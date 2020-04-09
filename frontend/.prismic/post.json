@@ -135,6 +135,24 @@
               }
             },
             "repeat": {}
+          },
+          "embed": {
+            "type": "Slice",
+            "fieldset": "Embed",
+            "description": "Plane HTML",
+            "icon": "filter_frames",
+            "display": "list",
+            "non-repeat": {
+              "plane_html": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph",
+                  "allowTargetBlank": true,
+                  "label": "plane_html"
+                }
+              }
+            },
+            "repeat": {}
           }
         }
       }
