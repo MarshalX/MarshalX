@@ -18,9 +18,9 @@
 <url> <loc>https://marshal.by/blog/post/vstroennye-tipy-v-python-i-interesnye-momenty</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/dependency-injection-v-servisah-bota</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/otsutstvie-avtorizacii-socialnyy-monitoring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/making-a-pypi-friendly-readme</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/bot-dlya-prosmotra-aktivnyh-polzovateley-v-telegram-kanale</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/xss-ne-eskeypnutye-dannye-u-yandeks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/making-a-pypi-friendly-readme</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/tipizaciya-v-python-i-ne-nado-heytit-za-dinamicheskuyu-ili-nado</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/statistika-i-analitika-dlya-botov-na-primere-bota-yandeks-muzyki-i-servisa-chatbase</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/documentation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
