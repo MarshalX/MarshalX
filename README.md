@@ -1,25 +1,24 @@
-# Личный сайт
+# Welcome to my GitHub!
 
-Был разработан в ходе участия в конкурсе, но с заделом на будущее. 
-Способен к выеданию глаз благодаря оранжевому цвету.
+I am 20 years old, and I am actively looking for myself in IT. 
 
-Upd 2020. Будущее наступило. Теперь это не 1 html файлик с bootstrap'om, 
-а всего-лишь ReactJS (GatsBy) + GraphQL + prismic = Headless CMS с моим 
-бложеком и резюме на главной странице.
+For the past few years I have been writing a backend in the Python. 
+Sometimes I do front-end in the React.
 
-## TODO
+I have a personal [Telegram channel](https://t.me/MarshalC) and a [website](https://marshal.by), 
+where I post fascinating articles. My tasks for the next few years are 
+learning English and dive into competitive programming.
 
-- Переместить ТГ бота в эту репу.
-- Запилить бек для дублирования постов на разные платформы.
-- Автогенерация ссылок для Instant View телеги?
-- Допилить автодеплой на вебхуке.
-- Добавить поиск по постам.
-- Добавить пагинацию.
-- Добавить комментарии.
-- Усовершенствовать работу с schema.org.
-    - Переписать получение схем/данных для них с prismic.
-- Запилить RSS feed.
-- На главную добавить инфу об опыте работы.
-- Разгребсти жирный main.js с CSS на styled-компоненты emotion.
-- Переписать форму обратной связи.
-- Разобраться что тут реальные зависимости, а что так, фуфел девелоперский.
+## Active Projects
+
+- [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) - it provides a Python high level interface for the private yandex music API.
+- [Yandex.Music Telegram bot](https://t.me/music_yandex_bot) - a full-fledged client of music service in the form of a bot in a messenger.
+- [Zoom Telegram Integration](https://t.me/zoombot) - create, share and plan Zoom meetings in work chats, personal messages using inline-mode.
+
+## Useful links
+
+- [Telegram](https://t.me/MarshalX)
+- [LinkedIn](https://www.linkedin.com/in/marshalx/)
+- [Instagram](https://www.instagram.com/ilya.marshal/)
+- [Twitter](https://twitter.com/Ilya_Marshal)
+- [Habr](https://habr.com/ru/users/marshalx/)
