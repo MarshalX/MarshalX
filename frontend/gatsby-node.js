@@ -71,11 +71,13 @@ exports.createPages = async ({ graphql, actions }) => {
       fromPath: `/${post_uid}`,
       toPath: post_path,
       isPermanent: true,
+      redirectInBrowser: true,
     })
     createRedirect({
       fromPath: `/${post_uid}/iv`,
       toPath: instant_view_path,
       isPermanent: false,
+      redirectInBrowser: true,
     })
   })
 

@@ -9,7 +9,10 @@ const Content = styled.div`
 
 const Image = ({ input }) => (
   <Content>
-    <Img fluid={input.primary.image.localFile.childImageSharp.fluid} />
+    <Img fluid={input.primary.image.localFile.childImageSharp.fluid} style={{
+      'maxWidth': input.primary.image.localFile.childImageSharp.fluid.presentationWidth,
+      'margin': 'auto'
+    }} />
   </Content>
 )
 
