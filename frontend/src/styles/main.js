@@ -1,7 +1,5 @@
 import { css } from "@emotion/core"
 
-import "../../static/bootstrap.min.css"
-
 const main = css`
   body {
     /*font-family: 'Lato', serif;*/

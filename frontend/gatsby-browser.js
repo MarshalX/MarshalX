@@ -1,6 +1,7 @@
 import $ from "jquery"
 import "jquery-ui-bundle"
 import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 export const onRouteUpdate = ({ location }) => {
   // Smooth scrolling using jQuery easing
