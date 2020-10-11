@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import "../utils/fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import CryptoJS from "crypto-js"
 import { OverlayTrigger, Tooltip } from "react-bootstrap"

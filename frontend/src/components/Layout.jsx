@@ -8,6 +8,7 @@ import { main, theme } from "../styles"
 import { Footer, Navbar, ScrollToTopButton } from "../components"
 import SEO from "./SEO"
 import website from "../../config"
+import "../utils/fontawesome"
 
 class PureLayout extends Component {
   render() {

@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { Container, Nav, Navbar as BNavBar } from "react-bootstrap"
 import { Link } from "gatsby"
-import "../utils/fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import styled from "@emotion/styled"
 

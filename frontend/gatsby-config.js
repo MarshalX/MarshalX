@@ -53,6 +53,7 @@ module.exports = {
     },
     "gatsby-plugin-lodash",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-fontawesome-css",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-robots-txt",
     {

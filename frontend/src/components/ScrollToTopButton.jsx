@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import "../utils/fontawesome"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default class ScrollToTopButton extends Component {

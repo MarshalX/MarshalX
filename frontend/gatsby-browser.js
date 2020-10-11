@@ -1,6 +1,6 @@
 import $ from "jquery"
 import "jquery-ui-bundle"
-import "bootstrap"
+import "bootstrap/dist/js/bootstrap.min"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 export const onRouteUpdate = ({ location }) => {
