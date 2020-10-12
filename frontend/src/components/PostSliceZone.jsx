@@ -5,7 +5,7 @@ import { prism } from "../styles"
 
 const Content = styled.div`
   ${prism};
-  padding: 6rem 0;
+  padding-bottom: 6rem;
   p,
   li {
     margin-bottom: 1rem;

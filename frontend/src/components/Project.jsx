@@ -1,10 +1,10 @@
-import React, { Component } from "react"
-import { ProjectSliceZone } from "./index"
-import { Card } from "react-bootstrap"
+import React, {Component} from "react"
+import {ProjectSliceZone} from "./index"
+import {Card} from "react-bootstrap"
 
 export default class Project extends Component {
   render() {
-    const { data } = this.props
+    const {data} = this.props
     return (
       <Card
         border={data.border_color.toLowerCase()}
@@ -17,7 +17,7 @@ export default class Project extends Component {
           }}
         />
         <Card.Body>
-          <Card.Text
+          <div className='card-text'
             dangerouslySetInnerHTML={{
               __html: data.description.html,
             }}

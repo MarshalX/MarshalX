@@ -3,10 +3,10 @@ import { Container } from "react-bootstrap"
 import styled from "@emotion/styled"
 
 const StyledSection = styled.section`
-  padding: 6rem 0;
+  padding: 5rem 0;
 
-  h2 {
-    font-size: 2.25rem;
+  h1 {
+    font-size: 2rem;
     line-height: 2rem;
   }
 
@@ -19,8 +19,6 @@ const StyledSection = styled.section`
 `
 
 const StyledMastheadSection = styled(StyledSection)`
-  padding-bottom: 2rem;
-
   h1 {
     font-size: 8vw;
     line-height: 3rem;
@@ -76,11 +74,11 @@ export default class Section extends Component {
     return (
       <>
         {masthead ? (
-          <StyledMastheadSection className={`${bg} ${text} mb-0`} id={id}>
+          <StyledMastheadSection className={`${bg} ${text} mb-0 text-break`} id={id}>
             <SectionContent {...this.props} star={star} text={text} />
           </StyledMastheadSection>
         ) : (
-          <StyledSection className={`${bg} ${text} mb-0`} id={id}>
+          <StyledSection className={`${bg} ${text} mb-0 text-break`} id={id}>
             <SectionContent {...this.props} star={star} text={text} />
           </StyledSection>
         )}

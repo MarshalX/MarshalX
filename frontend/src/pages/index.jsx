@@ -1,15 +1,15 @@
-import React, { Component } from "react"
-import { Layout, Listing } from "../components"
-import { Col, Row } from "react-bootstrap"
+import React, {Component} from "react"
+import {Layout, Listing} from "../components"
+import {Col, Row} from "react-bootstrap"
 import Section from "../components/Section"
 import ContactForm from "../components/ContactForm"
-import { graphql } from "gatsby"
+import {graphql} from "gatsby"
 import ContactLinks from "../components/Listing/ContactLinks"
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
 import Projects from "../components/Listing/Projects"
 
-const StyledP = styled.p`
+const StyledDiv = styled.div`
   p {
     margin-bottom: 1rem;
   }
@@ -20,7 +20,7 @@ class TextContent extends Component {
     return (
       <Row>
         <Col lg className="ml-auto text-justify">
-          <StyledP
+          <StyledDiv
             className="lead"
             dangerouslySetInnerHTML={{
               __html: this.props.html,
@@ -35,12 +35,12 @@ class TextContent extends Component {
 export default class Index extends Component {
   render() {
     const {
-      data: { index, posts, projects },
+      data: {index, posts, projects},
     } = this.props
 
     const before_name = (
       <Img
-        className="img-fluid mb-5 d-block mx-auto border-2 border-white rounded-circle"
+        className="img-fluid mb-5 d-block mx-auto border-2 border-white rounded-circle mt-5"
         fixed={index.data.photo.localFile.childImageSharp.fixed}
         alt={index.data.full_name.text}
       />
@@ -55,24 +55,24 @@ export default class Index extends Component {
           before_name={before_name}
           masthead={true}
         >
-          <TextContent html={index.data.summary.html} />
+          <TextContent html={index.data.summary.html}/>
         </Section>
         <Section id="posts" name="Недавние посты">
-          <Listing posts={posts.nodes} />
+          <Listing posts={posts.nodes}/>
         </Section>
         <Section dark={true} id="skills" name="Навыки">
-          <TextContent html={index.data.skills.html} />
+          <TextContent html={index.data.skills.html}/>
         </Section>
         <Section id="projects" name="Проекты">
-          <Projects projects={projects.nodes} />
+          <Projects projects={projects.nodes}/>
         </Section>
         <Section dark={true} id="contacts" name="Контакты">
-          <ContactLinks links={index.data.contact_links} />
+          <ContactLinks links={index.data.contact_links}/>
         </Section>
         <Section id="contact-me" name="Связаться со мной">
           <Row>
             <Col lg="8" className="mx-auto">
-              <ContactForm email={index.data.contact_email.text} />
+              <ContactForm email={index.data.contact_email.text}/>
             </Col>
           </Row>
         </Section>
