@@ -11,6 +11,7 @@ learning English and dive into competitive programming.
 
 ## Active Projects
 
+- [Telegram WebRTC (VoIP)](https://github.com/MarshalX/tgcalls) - voice chats, private incoming and outgoing calls in Telegram for Developers.
 - [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) - it provides a Python high level interface for the private yandex music API.
 - [Yandex.Music Telegram bot](https://t.me/music_yandex_bot) - a full-fledged client of music service in the form of a bot in a messenger.
 - [Zoom Telegram Integration](https://t.me/zoombot) - create, share and plan Zoom meetings in work chats, personal messages using inline-mode.
