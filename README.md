@@ -1,6 +1,6 @@
 # Welcome to my GitHub!
 
-I am 21 years old, and I am actively looking for myself in IT ✨
+I am 22 years old, and I am actively looking for myself in IT ✨
 
 For the past few years I have been writing a backend in the Python. I have a development experience in Node.js. Sometimes I do front-end in the React.
 
