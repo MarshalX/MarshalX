@@ -8,6 +8,7 @@ I have a personal [Telegram channel](https://t.me/MarshalC) ([the second one](ht
 
 ## Open Source Projects
 
+- [Python WebRTC](https://github.com/MarshalX/python-webrtc) — a Python Extension that provides bindings to native WebRTC. 
 - [Telegram Calls](https://github.com/MarshalX/tgcalls) — a Python library with C++ extenstion. Voice chats, private incoming and outgoing calls in Telegram for Developers.
   - Telegram channel [@tgcallslib](https://t.me/tgcallslib).
   - Telegram chat [@tgcallschat](https://t.me/tgcallschat).
