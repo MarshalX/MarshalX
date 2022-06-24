@@ -14,7 +14,7 @@ I have a personal [Telegram channel](https://t.me/MarshalC) ([the second one](ht
   - Telegram chat [@tgcallschat](https://t.me/tgcallschat).
 - [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) — a Python high level interface for the private yandex music API.
   - Telegram chat [@yandex_music_api](https://t.me/yandex_music_api).
-- [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detect changes made to the official Telegram sites.
+- [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detect changes made to the official Telegram sites, clients and servers. 
   - Telegram channel [@tgcrawl](https://t.me/tgcrawl).
 - [Type Language Object](https://github.com/MarshalX/tlo) — a Python and JavaScript/TypeScript library for reading binary serialized Type Language schemes.
 - [Awesome Telegram Calls](https://github.com/tgcalls/awesome-tgcalls) — a curated list of projects for Telegram Calls.
