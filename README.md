@@ -1,10 +1,6 @@
-# Welcome to my GitHub!
+# Welcome to my GitHub ✨
 
-I am 22 years old, and I am actively looking for myself in IT ✨
-
-For the past few years I have been writing a backend in the Python. I have a development experience in Node.js. Sometimes I do front-end in the React.
-
-I have a personal [Telegram channel](https://t.me/MarshalC) ([the second one](https://t.me/MarshalR)) and [a website](https://marshal.by/), where I post fascinating articles sometimes. My tasks for the next few years are to improve my English, prepare for algorithmic and system design interviews.
+Software engineer with 2.5+ years of strong experience in backend development in Python and JavaScript, practical experience in real-time communication (WebRTC) and frontend development in React + Redux, first-hand expertise in making C++ bindings for Python.
 
 ## Open Source Projects
 
