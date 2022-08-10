@@ -1,6 +1,6 @@
 # Welcome to my GitHub ✨
 
-Software engineer with 2.5+ years of strong experience in backend development in Python and JavaScript, practical experience in real-time communication (WebRTC) and frontend development in React + Redux, first-hand expertise in making C++ bindings for Python.
+Software engineer with 3 years of strong experience in backend development in Python and JavaScript, practical experience in real-time communication (WebRTC) and frontend development in React + Redux, first-hand expertise in making C++ bindings for Python.
 
 ## Open Source Projects
 
