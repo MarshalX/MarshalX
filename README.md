@@ -1,11 +1,11 @@
 # Welcome to my GitHub ✨
 
-Software engineer with 3 years of strong experience in backend development in Python and JavaScript, practical experience in real-time communication (WebRTC) and frontend development in React + Redux, first-hand expertise in making C++ bindings for Python.
+Software engineer with 3+ years of experience in backend development in Python and JavaScript/TypeScript, practical experience in video & audio real-time communication using WebRTC and frontend development in React + Redux, and first-hand expertise in making C++ bindings for Python.
 
 ## Open Source Projects
 
 - [Python WebRTC](https://github.com/MarshalX/python-webrtc) — a Python Extension that provides bindings to native WebRTC. 
-- [Telegram Calls](https://github.com/MarshalX/tgcalls) — a Python library with C++ extenstion. Voice chats, private incoming and outgoing calls in Telegram for Developers.
+- [Telegram Calls](https://github.com/MarshalX/tgcalls) — a Python library with C++ extenstion. Voice chats, personal incoming and outgoing calls in Telegram for Developers.
   - Telegram channel [@tgcallslib](https://t.me/tgcallslib).
   - Telegram chat [@tgcallschat](https://t.me/tgcallschat).
 - [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) — a Python high level interface for the private yandex music API.
@@ -24,8 +24,7 @@ Software engineer with 3 years of strong experience in backend development in Py
 
 ## Useful links
 
-- [Telegram](https://t.me/MarshalX)
-- [Patreon](https://www.patreon.com/MarshalX)
+- [CV](https://marshal.dev)
 - [LinkedIn](https://www.linkedin.com/in/marshalx/)
-- [Instagram](https://www.instagram.com/ilya.marshal/)
+- [Telegram](https://t.me/MarshalX)
 - [Habr](https://habr.com/ru/users/marshalx/)
