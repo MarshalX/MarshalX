@@ -5,12 +5,12 @@ Software engineer with 3+ years of experience in backend development in Python a
 ## Open Source Projects
 
 - [Python WebRTC](https://github.com/MarshalX/python-webrtc) — a Python Extension that provides bindings to native WebRTC. 
-- [Telegram Calls](https://github.com/MarshalX/tgcalls) — a Python library with C++ extenstion. Voice chats, personal incoming and outgoing calls in Telegram for Developers.
+- [Telegram Calls](https://github.com/MarshalX/tgcalls) — a Python library with C++ extension. Voice chats, personal incoming and outgoing calls in Telegram for Developers.
   - Telegram channel [@tgcallslib](https://t.me/tgcallslib).
   - Telegram chat [@tgcallschat](https://t.me/tgcallschat).
-- [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) — a Python high level interface for the private yandex music API.
+- [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) — a Python high-leve interface for the private Yandex Music API.
   - Telegram chat [@yandex_music_api](https://t.me/yandex_music_api).
-- [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detect changes made to the official Telegram sites, clients and servers. 
+- [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detects changes made to the official Telegram sites, clients and servers. 
   - Telegram channel [@tgcrawl](https://t.me/tgcrawl).
 - [Type Language Object](https://github.com/MarshalX/tlo) — a Python and JavaScript/TypeScript library for reading binary serialized Type Language schemes.
 - [Awesome Telegram Calls](https://github.com/tgcalls/awesome-tgcalls) — a curated list of projects for Telegram Calls.
@@ -20,7 +20,7 @@ Software engineer with 3+ years of experience in backend development in Python a
 
 - Telegram bot [@music_yandex_bot](https://t.me/music_yandex_bot) — a full-featured client of music service in the form of a bot in a messenger.
   - Telegram channel [@music_yandex_channel](https://t.me/music_yandex_channel).
-- Telegram bot [@zoombot](https://t.me/zoombot) — create, share and plan Zoom meetings in Telegram work chats, personal messages using inline-mode.
+- Telegram bot [@zoombot](https://t.me/zoombot) — create, share and plan Zoom meetings in Telegram work chats, and personal messages using inline mode.
 
 ## Useful links
 
