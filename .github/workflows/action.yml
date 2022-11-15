@@ -1,6 +1,7 @@
 name: Deploy on GitHub Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -24,7 +25,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
         run: |
           git config --local user.email "auto@deploy"
-          git config --local user.name "Auto Delpoy"
+          git config --local user.name "Auto Deploy"
 
           git remote set-url origin "$(git config --get remote.origin.url | sed 's#http.*com/#git@github.com:#g')"
 
