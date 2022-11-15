@@ -18,24 +18,17 @@ jobs:
       - name: Install dependencies
         working-directory: frontend
         run: yarn install
-      - name: Deploy
+      - name: Build
         working-directory: frontend
         env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
           API_KEY: ${{ secrets.API_KEY }}
         run: |
-          git config --local user.email "auto@deploy"
-          git config --local user.name "Auto Deploy"
-
-          git remote set-url origin "$(git config --get remote.origin.url | sed 's#http.*com/#git@github.com:#g')"
-
-          eval `ssh-agent -t 180 -s`
-          echo "$DEPLOY_KEY" | ssh-add -
-
-          mkdir -p ~/.ssh/
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-
-          yarn deploy
-
-          ssh-agent -k
+          yarn build
+          cp ./CNAME ./public
         shell: bash
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages
+          folder: public
+          clean: false
