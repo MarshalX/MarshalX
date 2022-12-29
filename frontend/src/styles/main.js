@@ -48,7 +48,7 @@ const main = css`
 
   hr.star-light:after {
     color: #fff;
-    background-color: #ff5a00;
+    background-color: #131313;
     background-image: url("/star_light.svg");
   }
 
@@ -95,6 +95,25 @@ const main = css`
 
   #nav.navbar-shrink .navbar-brand {
     font-size: 1.5em;
+  }
+  
+  .navbar-brand,
+  .navbar-brand:hover,
+  .navbar-brand:active,
+  .navbar-brand:focus {
+    color: #000000 !important;
+    background: -webkit-linear-gradient(left, #FF7F00, #D8580F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .navbar-nav li.nav-item a.nav-link {
+    font-weight: 700;
+    font-family: "Montserrat",serif;
+    text-transform: uppercase !important;
+  }
+  .navbar-nav li.nav-item a.nav-link:hover {
+    color: #E0733A !important;
   }
 
   .lead {
@@ -225,7 +244,7 @@ const main = css`
   }
 
   .floating-label-form-group-with-focus label {
-    color: #ff5a00;
+    color: #E0733A;
   }
 
   form .row:first-of-type .floating-label-form-group {
@@ -244,7 +263,7 @@ const main = css`
   }
 
   a {
-    color: #ff5a00;
+    color: #E0733A;
   }
 
   a:focus {
@@ -253,7 +272,7 @@ const main = css`
 
   a:hover,
   a:active {
-    color: #d75100;
+    color: #CE6A36;
     text-decoration: none;
   }
 
@@ -266,7 +285,7 @@ const main = css`
   }
 
   .bg-primary {
-    background-color: #ff5a00 !important;
+    background-color: #131313 !important;
   }
 
   .bg-secondary {
@@ -274,7 +293,7 @@ const main = css`
   }
 
   .text-primary {
-    color: #ff5a00 !important;
+    color: #E0733A !important;
   }
 
   .text-secondary {
@@ -282,9 +301,9 @@ const main = css`
   }
 
   .btn-primary {
-    outline-color: #ff5a00;
-    background-color: #ff5a00;
-    border-color: #ff5a00;
+    outline-color: #131313;
+    background-color: #131313;
+    border-color: #131313;
   }
 
   .btn-primary:hover,
@@ -293,15 +312,15 @@ const main = css`
   .btn-primary:disabled,
   .btn-primary:not(:disabled):not(.disabled):active,
   .btn-primary:not(:disabled):not(.disabled):active:focus {
-    outline-color: #ff5a00;
-    box-shadow: 0 0 0 0.2rem rgba(255, 90, 0, 0.5);
-    background-color: #d75100;
-    border-color: #d75100;
+    outline-color: #252525;
+    box-shadow: 0 0 0 0.1rem rgba(27, 27, 27, 0.5);
+    background-color: #252525;
+    border-color: #252525;
   }
 
   #fixed:active {
-    background-color: #d75100;
-    border-color: #d75100;
+    background-color: #CE6A36;
+    border-color: #CE6A36;
   }
 
   #fixed:focus {

@@ -27,7 +27,7 @@ const StyledNavBar = styled(BNavBar)`
   }
 
   .navbar-nav li.nav-item a.nav-link:hover {
-    color: ${props => (props.main ? "#ff5a00" : "#fff")};
+    color: ${props => (props.main ? "#E0733A" : "#fff")};
   }
 
   .navbar-nav li.nav-item a.nav-link:active,
@@ -36,7 +36,7 @@ const StyledNavBar = styled(BNavBar)`
   }
 
   .navbar-nav li.nav-item a.nav-link.active {
-    color: #ff5a00;
+    color: #E0733A;
   }
 
   .navbar-toggler {
@@ -62,14 +62,14 @@ const StyledNavBar = styled(BNavBar)`
 
     .navbar-nav > li.nav-item > a.nav-link.active {
       color: #fff;
-      background: #ff5a00;
+      background: #E0733A;
     }
 
     .navbar-nav > li.nav-item > a.nav-link.active:active,
     .navbar-nav > li.nav-item > a.nav-link.active:focus,
     .navbar-nav > li.nav-item > a.nav-link.active:hover {
       color: #fff;
-      background: #ff5a00;
+      background: #E0733A;
     }
   }
 `

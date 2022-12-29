@@ -8,7 +8,6 @@ import website from "../../../config"
 import SEO from "../../components/SEO"
 
 const StyledLink = styled(Link)`
-  font-size: 2.369rem;
   font-style: normal;
 `
 
@@ -41,7 +40,7 @@ export default class Categories extends Component {
           blog
         />
         <Section dark={true} id="header" name="Категории" masthead={true} />
-        <Section id="categories" compact={true}>
+        <Section id="categories" name={'Категории публикаций в блоге'}>
           <ListGroup>
             {Object.entries(categoryDict).map(data => (
               <ListGroup.Item key={data[0]}>

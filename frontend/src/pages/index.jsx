@@ -11,6 +11,7 @@ import Projects from "../components/Listing/Projects"
 
 const StyledDiv = styled.div`
   p {
+    text-indent: 25px;
     margin-bottom: 1rem;
   }
 `
@@ -120,7 +121,7 @@ export const pageQuery = graphql`
       }
     }
     posts: allPrismicPost(
-      limit: 3
+      limit: 5
       sort: { fields: [data___date], order: DESC }
     ) {
       nodes {

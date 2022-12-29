@@ -21,7 +21,7 @@ const StyledSection = styled.section`
 const StyledMastheadSection = styled(StyledSection)`
   h1 {
     font-size: 8vw;
-    line-height: 3rem;
+    line-height: 2rem;
   }
 
   h2 {
@@ -32,8 +32,8 @@ const StyledMastheadSection = styled(StyledSection)`
     padding-bottom: 2rem;
 
     h1 {
-      font-size: 3.75em;
-      line-height: 4rem;
+      font-size: 2.75em;
+      line-height: 3rem;
     }
 
     h2 {

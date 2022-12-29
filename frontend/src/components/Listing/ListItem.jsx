@@ -5,7 +5,7 @@ import Categories from "./Categories"
 import { ListGroup } from "react-bootstrap"
 
 const StyledLink = styled(Link)`
-  font-size: 2.369rem;
+  font-size: 1.25rem;
   font-style: normal;
 `
 

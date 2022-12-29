@@ -1,21 +1,20 @@
 module.exports = {
   pathPrefix: "/",
-  title: "Илья Семёнов (Marshal) | Портфолио",
+  title: "Ilya (Marshal) Siamionau",
   titleAlt: "Marshal.by",
-  description:
-    'Моя личная визитная карточка и путеводитель "от увлечения к профессии", с перечнем разработанных проектов, полученных наград и приобретенных навыков',
-  headline: "Илья Семёнов | Портфолио",
+  description: 'Заброшенный и устаревший блог нуждающийся в реанимации.',
+  headline: "Ilya Siamionau",
   url: "https://marshal.by",
   siteLanguage: "ru",
-  logo: "/logo.png",
+  logo: "/logo.jpg",
   ogLanguage: "ru_RU",
 
   favicon: "src/favicon.png",
   shortName: "Marshal.by",
   themeColor: "#ff5a00",
-  backgroundColor: "#fff",
+  backgroundColor: "#ffffff",
 
-  twitter: "@ilya.marshal",
+  twitter: "@Ilya_Marshal",
   openGraph: "Marshal.by",
 
   ymAccount: 53800276,

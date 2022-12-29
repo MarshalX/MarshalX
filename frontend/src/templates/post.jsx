@@ -133,7 +133,7 @@ export const pageQuery = graphql`
       }
     }
     posts: allPrismicPost(
-      limit: 2
+      limit: 4
       sort: { fields: [data___date], order: DESC }
       filter: { uid: { ne: $uid } }
     ) {

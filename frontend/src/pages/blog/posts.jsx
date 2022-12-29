@@ -21,7 +21,7 @@ export default class Posts extends Component {
           blog
         />
         <Section dark={true} id="header" name="Блог" masthead={true} />
-        <Section id="posts" compact={true}>
+        <Section id="posts" name={'Публикации в блоге'}>
           <Listing posts={posts.nodes} />
         </Section>
       </Layout>

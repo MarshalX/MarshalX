@@ -133,7 +133,7 @@ const SEO = ({
       copyrightHolder: {
         ...schemaOrgPerson,
       },
-      copyrightYear: "2020",
+      copyrightYear: new Date().getFullYear(),
       creator: {
         ...schemaOrgPerson,
       },
