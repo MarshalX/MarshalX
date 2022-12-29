@@ -6,7 +6,7 @@ module.exports = {
   headline: "Ilya Siamionau",
   url: "https://marshal.by",
   siteLanguage: "ru",
-  logo: "/logo.jpg",
+  logo: "/logo.png",
   ogLanguage: "ru_RU",
 
   favicon: "src/favicon.png",
