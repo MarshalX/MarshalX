@@ -102,7 +102,6 @@ export default class Navbar extends Component {
   render() {
     return (
       <>
-        <FontAwesomeIcon icon={["fas", "star"]} />
         <StyledNavBar
           bg={this.props.main ? "secondary" : "primary"}
           expand="lg"
