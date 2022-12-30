@@ -73,7 +73,7 @@ export default class Index extends Component {
         <Section id="contact-me" name="Связаться со мной">
           <Row>
             <Col lg="8" className="mx-auto">
-              <ContactForm email={index.data.contact_email.text}/>
+              <ContactForm formId={index.data.contact_email.text}/>
             </Col>
           </Row>
         </Section>
