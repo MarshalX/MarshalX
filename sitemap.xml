@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://marshal.by/blog/post/istoriya-revyu-zoombot</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/2019</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/denь-smerti-appget</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/vash-pereezd-yandeksmuzyka-spotify</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/21-srok-formirovaniya-privychki</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -22,24 +23,25 @@
 <url> <loc>https://marshal.by/blog/post/dependency-injection-v-servisah-bota</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/pep-622</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/nuzhno-li-vysshee-obrazovanie-v-it</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/bot-dlya-prosmotra-aktivnyh-polzovateley-v-telegram-kanale</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/otsutstvie-avtorizacii-socialnyy-monitoring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/making-a-pypi-friendly-readme</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/tipizaciya-v-python-i-ne-nado-heytit-za-dinamicheskuyu-ili-nado</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/post/xss-ne-eskeypnutye-dannye-u-yandeks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/otsutstvie-avtorizacii-socialnyy-monitoring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/statistika-i-analitika-dlya-botov-na-primere-bota-yandeks-muzyki-i-servisa-chatbase</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/xss-ne-eskeypnutye-dannye-u-yandeks</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/making-a-pypi-friendly-readme</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/bot-dlya-prosmotra-aktivnyh-polzovateley-v-telegram-kanale</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/moy-preezd-chrome-firefox-vivaldi</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/post/2020</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/2021</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/documentation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/post/generaciya-shemy-sborki-kartiny-fotografii-iz-lego</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/zoom-telegram-integration</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://marshal.by/blog/category/results-of-the-year</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/poznavatelno</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/raznoe</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/mnenie-otnoshenie</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/zametki</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/covid-19</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/category/pro-python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://marshal.by/blog/category/results-of-the-year</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/categories/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/blog/posts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://marshal.by/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
