@@ -106,7 +106,7 @@ export const pageQuery = graphql`
         photo {
           localFile {
             childImageSharp {
-              fixed(width: 250) {
+              fixed(width: 250, quality: 100) {
                 ...GatsbyImageSharpFixed
               }
             }
