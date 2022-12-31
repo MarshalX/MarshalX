@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap"
 import styled from "@emotion/styled"
 
 const StyledSection = styled.section`
-  padding: 5rem 0;
+  padding: 8rem 0;
 
   h1 {
     font-size: 2rem;

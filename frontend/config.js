@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: "/",
   title: "Ilya (Marshal) Siamionau",
-  titleAlt: "Marshal.by",
+  titleAlt: "marshal.by",
   description: 'Заброшенный и устаревший блог нуждающийся в реанимации.',
   headline: "Ilya Siamionau",
   url: "https://marshal.by",
@@ -10,12 +10,12 @@ module.exports = {
   ogLanguage: "ru_RU",
 
   favicon: "src/favicon.png",
-  shortName: "Marshal.by",
+  shortName: "marshal.by",
   themeColor: "#ff5a00",
   backgroundColor: "#ffffff",
 
   twitter: "@Ilya_Marshal",
-  openGraph: "Marshal.by",
+  openGraph: "marshal.by",
 
   ymAccount: 53800276,
 
