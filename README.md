@@ -12,9 +12,9 @@ Software engineer with 3+ years of experience in backend development in Python a
   - Telegram chat [@tgcallschat](https://t.me/tgcallschat).
 - [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) — a Python high-level interface for the private API of Yandex Music.
   - Telegram chat [@yandex_music_api](https://t.me/yandex_music_api).
-- [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detects changes to the official Telegram sites, clients, and servers.
+- [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detects changes to the official Telegram sites, beta clients, and servers.
   - Telegram channel [@tgcrawl](https://t.me/tgcrawl).
-- [Yandex Music Token](https://github.com/MarshalX/yandex-music-token) — a web app, android app, and browser extensions for security authorization users by Yandex credentials.
+- [Yandex Music Token](https://github.com/MarshalX/yandex-music-token) — a few projects for security authorization users by Yandex credentials.
 - [Type Language Object](https://github.com/MarshalX/tlo) — a Python and JavaScript/TypeScript library for reading binary serialized Type Language schemes.
 - [Awesome Telegram Calls](https://github.com/tgcalls/awesome-tgcalls) — a curated list of projects for Telegram Calls.
 
@@ -22,7 +22,7 @@ Software engineer with 3+ years of experience in backend development in Python a
 
 - Telegram bot [@music_yandex_bot](https://t.me/music_yandex_bot) — a full-featured client of music service in the form of a bot in a messenger.
   - Telegram channel [@music_yandex_channel](https://t.me/music_yandex_channel).
-- Telegram bot [@zoombot](https://t.me/zoombot) — create, share, and plan Zoom meetings in Telegram work chats, and personal messages using inline mode.
+- Telegram bot [@zoombot](https://t.me/zoombot) — create, share, and plan Zoom meetings in Telegram work chats, and personal messages.
 
 ## Useful links
 
