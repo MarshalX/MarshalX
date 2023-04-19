@@ -1,6 +1,6 @@
 # Welcome to my GitHub ✨
 
-Software engineer with 3+ years of experience in backend development in Python and JavaScript/TypeScript, practical experience in video & audio real-time communication using WebRTC and frontend development in React + Redux, and first-hand expertise in making C++ bindings for Python.
+Software Engineer with 3+ years of experience in backend development in Python and JavaScript/TypeScript, practical experience in video & audio real-time communication using WebRTC and frontend development in React + Redux, and first-hand expertise in making C++ bindings for Python.
 
 [![wakatime](https://wakatime.com/badge/user/3dffa020-4a1a-4dcc-8526-a337c2321c39.svg)](https://wakatime.com/@3dffa020-4a1a-4dcc-8526-a337c2321c39)
 
@@ -14,6 +14,7 @@ Software engineer with 3+ years of experience in backend development in Python a
   - Telegram chat [@yandex_music_api](https://t.me/yandex_music_api).
 - [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detects changes to the official Telegram sites, beta clients, and servers.
   - Telegram channel [@tgcrawl](https://t.me/tgcrawl).
+  - Telegram forum [@tfcrawl](https://t.me/tfcrawl).
 - [Yandex Music Token](https://github.com/MarshalX/yandex-music-token) — a few projects for security authorization users by Yandex credentials.
 - [Type Language Object](https://github.com/MarshalX/tlo) — a Python and JavaScript/TypeScript library for reading binary serialized Type Language schemes.
 - [Awesome Telegram Calls](https://github.com/tgcalls/awesome-tgcalls) — a curated list of projects for Telegram Calls.
