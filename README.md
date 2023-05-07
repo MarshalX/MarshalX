@@ -6,6 +6,8 @@ Software Engineer with 3+ years of experience in backend development in Python a
 
 ## Open Source Projects
 
+- [atproto 🆕](https://github.com/MarshalX/atproto) — the AT Protocol SDK for Python.
+  - Discord channel: [Bluesky API Touchers](https://discord.gg/PCyVJXU9jN).
 - [Python WebRTC](https://github.com/MarshalX/python-webrtc) — a Python Extension that provides bindings to native WebRTC. 
 - [Telegram Calls](https://github.com/MarshalX/tgcalls) — a Python library with C++ extension. Voice and video group calls in Telegram for Developers.
   - Telegram channel [@tgcallslib](https://t.me/tgcallslib).
