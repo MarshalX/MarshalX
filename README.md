@@ -1,6 +1,6 @@
 # Welcome to my GitHub ✨
 
-Software Engineer with 3+ years of experience in backend development in Python and JavaScript/TypeScript, practical experience in video & audio real-time communication using WebRTC and frontend development in React + Redux, and first-hand expertise in making C++ bindings for Python.
+Experienced Software Engineer specializing in backend development in Python and TypeScript, with practical experience in real-time video and audio communication using WebRTC, and frontend development in React + Redux. Also possesses first-hand expertise in creating C++ bindings for Python.
 
 [![wakatime](https://wakatime.com/badge/user/3dffa020-4a1a-4dcc-8526-a337c2321c39.svg)](https://wakatime.com/@3dffa020-4a1a-4dcc-8526-a337c2321c39)
 
