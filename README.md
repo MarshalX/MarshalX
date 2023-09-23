@@ -21,12 +21,6 @@ Experienced Software Engineer specializing in backend development in Python and 
 - [Type Language Object](https://github.com/MarshalX/tlo) — a Python and JavaScript/TypeScript library for reading binary serialized Type Language schemes.
 - [Awesome Telegram Calls](https://github.com/tgcalls/awesome-tgcalls) — a curated list of projects for Telegram Calls.
 
-## Closed Source Projects
-
-- Telegram bot [@music_yandex_bot](https://t.me/music_yandex_bot) — a full-featured client of music service in the form of a bot in a messenger.
-  - Telegram channel [@music_yandex_channel](https://t.me/music_yandex_channel).
-- Telegram bot [@zoombot](https://t.me/zoombot) — create, share, and plan Zoom meetings in Telegram work chats, and personal messages.
-
 ## Useful links
 
 - [CV](https://marshal.dev)
