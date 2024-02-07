@@ -26,4 +26,3 @@ Experienced Software Engineer specializing in backend development in Python and 
 - [CV](https://marshal.dev)
 - [LinkedIn](https://www.linkedin.com/in/marshalx/)
 - [Telegram](https://t.me/MarshalX)
-- [Habr](https://habr.com/ru/users/marshalx/)
