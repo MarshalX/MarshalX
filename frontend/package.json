@@ -1,9 +1,9 @@
 {
-  "name": "marshal.by",
+  "name": "legacy.marshal.dev",
   "private": true,
   "version": "0.1.0",
   "license": "GNU GPL 3",
-  "homepage": "https://marshal.by/",
+  "homepage": "https://legacy.marshal.dev/",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
