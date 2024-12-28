@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://marshal.by/sitemap.xml
-Host: https://marshal.by
+Sitemap: https://legacy.marshal.dev/sitemap.xml
+Host: https://legacy.marshal.dev
