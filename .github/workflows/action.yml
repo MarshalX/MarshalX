@@ -5,6 +5,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/action.yml'
 
 jobs:
   deploy:

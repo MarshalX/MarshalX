@@ -1,29 +1,14 @@
-# Welcome to my GitHub ✨
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MarshalX/MarshalX/master/assets/banner-dark.svg">
+  <img alt="Hi, I'm Ilya. I build developer tools." src="https://raw.githubusercontent.com/MarshalX/MarshalX/master/assets/banner-light.svg" width="100%">
+</picture>
 
-Software Engineer with extensive experience in Python and TypeScript backend development, React + Redux frontend work, and real-time video/audio communication using WebRTC. Known for building high-impact open-source SDKs (500K+ monthly downloads), and creating C++ and Rust bindings for Python. Proficient in developing plugins for IntelliJ, VS Code, and other IDEs. 
+<br>
 
-[![wakatime](https://wakatime.com/badge/user/3dffa020-4a1a-4dcc-8526-a337c2321c39.svg)](https://wakatime.com/@3dffa020-4a1a-4dcc-8526-a337c2321c39)
+**Bluesky.** I maintain [atproto](https://github.com/MarshalX/atproto), the Python SDK, with docs and guides at [atproto.blue](https://atproto.blue). Its Rust core, [Python IPLD](https://github.com/MarshalX/python-libipld), decodes the firehose. Together they get about 650K downloads a month. I also wrote the Python examples in [Bluesky's own docs](https://docs.bsky.app).
 
-## Open Source Projects
+**Real-time.** [Python WebRTC](https://github.com/MarshalX/python-webrtc) puts Chrome's WebRTC engine, with the browser API, into Python. Before it, [Telegram Calls](https://github.com/MarshalX/tgcalls) wrapped Telegram's own C++ call library and brought group voice and video calls to Python.
 
-- [atproto](https://github.com/MarshalX/atproto) — the AT Protocol SDK for Python.
-  - Website: [atproto.blue](https://atproto.blue).
-  - Discord channel: [Bluesky API Touchers](https://discord.gg/PCyVJXU9jN).
-- [Python IPILD](https://github.com/MarshalX/python-libipld) — fast Rust-based library for Python to work with IPLD: DAG-CBOR, CID, CAR and multibase.
-- [Python WebRTC](https://github.com/MarshalX/python-webrtc) — a Python Extension that provides bindings to native WebRTC. 
-- [Telegram Calls](https://github.com/MarshalX/tgcalls) — a Python library with C++ extension. Voice and video group calls in Telegram for Developers.
-  - Telegram channel [@tgcallslib](https://t.me/tgcallslib).
-  - Telegram chat [@tgcallschat](https://t.me/tgcallschat).
-- [Yandex.Music API](https://github.com/MarshalX/yandex-music-api) — a Python high-level interface for the private API of Yandex Music.
-  - Telegram chat [@yandex_music_api](https://t.me/yandex_music_api).
-- [Telegram Web Crawler](https://github.com/MarshalX/telegram-crawler) — automatically detects changes to the official Telegram sites, beta clients, and servers.
-  - Telegram channel [@tgcrawl](https://t.me/tgcrawl).
-  - Telegram forum [@tfcrawl](https://t.me/tfcrawl).
-- [Yandex Music Token](https://github.com/MarshalX/yandex-music-token) — a few projects for security authorization users by Yandex credentials.
-- [Type Language Object](https://github.com/MarshalX/tlo) — a Python and JavaScript/TypeScript library for reading binary serialized Type Language schemes.
-- [Bluesky custom feed](https://github.com/MarshalX/bluesky-feed-generator) — Bluesky custom feed algorithms server in Python.
+**Developer tools.** Security scanning where developers already work. I worked on [Cycode CLI](https://github.com/cycodehq/cycode-cli), its MCP server, and the plugins for [VS Code](https://github.com/cycodehq/vscode-extension), [JetBrains IDEs](https://github.com/cycodehq/intellij-platform-plugin) and [Visual Studio](https://github.com/cycodehq/visual-studio-extension). At Datadog I started with the [VS Code extension](https://github.com/DataDog/datadog-for-vscode), then moved to Code Security, where my work includes the [IaC scanner](https://github.com/DataDog/datadog-iac-scanner).
 
-## Useful links
-
-- [CV](https://marshal.dev)
-- [LinkedIn](https://www.linkedin.com/in/marshalx/)
+**Undocumented APIs.** I like reading what isn't published. [Telegram Crawler](https://github.com/MarshalX/telegram-crawler) diffs Telegram's sites, beta apps, servers and mini apps around the clock, and [@tgcrawl](https://t.me/tgcrawl) often shows features before they're announced. [Yandex Music API](https://github.com/MarshalX/yandex-music-api) is a typed Python client for the streaming service's private API, kept in sync with it since 2019.
